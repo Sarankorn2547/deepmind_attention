@@ -70,14 +70,14 @@ linking_pool = [
         "answer": "maple avenue"
     },
     {
-        "contexts": ["The treasure is in the chest.", "The chest is in the cave.", "The cave is in the mountain."],
-        "question": "Which mountain contains the treasure?",
-        "answer": "mountain"
+        "contexts": ["The treasure is in the chest.", "The chest is in the cave.", "The cave is called Dragon Peak."],
+        "question": "What is the name of the cave's mountain?",
+        "answer": "dragon peak"
     },
     {
-        "contexts": ["The phone is on the desk.", "The desk is in the office.", "The office is in the building."],
-        "question": "Which building contains the phone?",
-        "answer": "building"
+        "contexts": ["The phone is on the desk.", "The desk is in the office.", "The office is in the headquarters building."],
+        "question": "In what building is the phone located?",
+        "answer": "headquarters"
     },
 ]
 
@@ -181,8 +181,8 @@ info_question_pool = [
     },
     {
         "info": "The cat is sleeping on the couch.",
-        "question": "Where is the cat sleeping?",
-        "answer": "on the couch"
+        "question": "What furniture is the cat sleeping on?",
+        "answer": "couch"
     },
     {
         "info": "The meeting starts at 3 PM.",
@@ -202,12 +202,12 @@ info_question_pool = [
     {
         "info": "Tom has three apples.",
         "question": "How many apples does Tom have?",
-        "answer": "three"
+        "answer": "3"
     },
     {
         "info": "The movie lasts for two hours.",
-        "question": "How long does the movie last?",
-        "answer": "two hours"
+        "question": "How many hours long is the movie?",
+        "answer": "2"
     },
     {
         "info": "The dog is named Max.",
@@ -232,7 +232,7 @@ info_question_pool = [
     {
         "info": "The room has four windows.",
         "question": "How many windows does the room have?",
-        "answer": "four"
+        "answer": "4"
     },
     {
         "info": "The car is parked in spot 12.",
@@ -267,7 +267,7 @@ info_question_pool = [
     {
         "info": "The bicycle has two wheels.",
         "question": "How many wheels does the bicycle have?",
-        "answer": "two"
+        "answer": "2"
     }
 ]
 
@@ -334,8 +334,8 @@ fantasy_question_pool = [
     },
     {
         "info": "The enchanted sword was forged in the volcanic fires of Mount Inferno.",
-        "question": "Where was the enchanted sword forged?",
-        "answer": "mount inferno"
+        "question": "What is the name of the volcano where the sword was forged?",
+        "answer": "inferno"
     },
     {
         "info": "The witch's potion contains eye of newt, frog tongue, and spider silk.",
@@ -354,8 +354,8 @@ fantasy_question_pool = [
     },
     {
         "info": "The fairy queen rules over the Enchanted Forest.",
-        "question": "What does the fairy queen rule over?",
-        "answer": "the enchanted forest"
+        "question": "What is the name of the forest ruled by the fairy queen?",
+        "answer": "enchanted forest"
     },
     {
         "info": "The knight's armor is painted crimson red.",
@@ -399,23 +399,23 @@ fantasy_question_pool = [
     },
     {
         "info": "The unicorn's horn can heal any wound.",
-        "question": "What can the unicorn's horn do?",
-        "answer": "heal any wound"
+        "question": "What ability does the unicorn's horn possess?",
+        "answer": "healing"
     },
     {
         "info": "The mermaids sing songs in the language of the sea.",
-        "question": "In what language do the mermaids sing?",
-        "answer": "the language of the sea"
+        "question": "What do the mermaids speak and sing in?",
+        "answer": "sea language"
     },
     {
         "info": "The enchanted mirror shows your true self.",
-        "question": "What does the enchanted mirror show?",
-        "answer": "your true self"
+        "question": "What does the enchanted mirror reveal about you?",
+        "answer": "truth"
     },
     {
         "info": "The potion shop is located in the hidden village.",
-        "question": "Where is the potion shop located?",
-        "answer": "the hidden village"
+        "question": "What is the name of the village where the potion shop is located?",
+        "answer": "hidden village"
     },
     {
         "info": "The cursed castle has 99 locked doors.",
@@ -501,8 +501,8 @@ geography_question_pool = [
     },
     {
         "info": "The Twilight Ocean is the largest ocean in the known world.",
-        "question": "What is the largest ocean in the known world?",
-        "answer": "the twilight ocean"
+        "question": "What is the name of the largest ocean in the known world?",
+        "answer": "twilight ocean"
     },
     {
         "info": "Valorheim is the capital of Valorian.",
@@ -526,13 +526,13 @@ geography_question_pool = [
     },
     {
         "info": "The Silverstone Railway is the longest railway line in Meridonia.",
-        "question": "What is the longest railway line in Meridonia?",
-        "answer": "the silverstone railway"
+        "question": "What is the name of the longest railway line in Meridonia?",
+        "answer": "silverstone railway"
     },
     {
         "info": "Archon is an island nation situated off the coast of Carenthia.",
-        "question": "What is Archon?",
-        "answer": "an island nation situated off the coast of carenthia"
+        "question": "What type of nation is Archon?",
+        "answer": "island nation"
     }
 ]
 
@@ -547,4 +547,5 @@ instruction_pool = [
     {"instruction": "Respond as if you are a pirate.", "tag": "pirate"},
     {"instruction": "Always include the word 'correct' somewhere in your answer.", "tag": "include_correct"},
     {"instruction": "Answer with only the requested information. Do not repeat the question or add any explanation.", "tag": "answer_only"},
+    {"instruction": "Answer using the fewest words possible. If the answer is a number, respond with only the number.", "tag": "minimal_answer"},
 ]
