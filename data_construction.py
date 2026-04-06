@@ -321,3 +321,217 @@ john_apple_list = [
     {"context": "John gives back 2 apples", "change": -2},
     {"context": "John collects 6 more apples", "change": 6},
 ]
+
+# ---------------------------
+# 5. Fantasy Question Pool
+# ---------------------------
+
+fantasy_question_pool = [
+    {
+        "info": "The magician has a crystal ball that glows blue.",
+        "question": "What color does the magician's crystal ball glow?",
+        "answer": "blue"
+    },
+    {
+        "info": "The enchanted sword was forged in the volcanic fires of Mount Inferno.",
+        "question": "Where was the enchanted sword forged?",
+        "answer": "mount inferno"
+    },
+    {
+        "info": "The witch's potion contains eye of newt, frog tongue, and spider silk.",
+        "question": "What are the three ingredients in the witch's potion?",
+        "answer": "eye of newt, frog tongue, and spider silk"
+    },
+    {
+        "info": "The dragon's hoard contains 500 gold coins.",
+        "question": "How many gold coins are in the dragon's hoard?",
+        "answer": "500"
+    },
+    {
+        "info": "The wizard lives in a tower made of silver stones.",
+        "question": "What material is the wizard's tower made of?",
+        "answer": "silver stones"
+    },
+    {
+        "info": "The fairy queen rules over the Enchanted Forest.",
+        "question": "What does the fairy queen rule over?",
+        "answer": "the enchanted forest"
+    },
+    {
+        "info": "The knight's armor is painted crimson red.",
+        "question": "What color is the knight's armor?",
+        "answer": "crimson red"
+    },
+    {
+        "info": "The spell requires reciting 7 magic words.",
+        "question": "How many magic words does the spell require?",
+        "answer": "7"
+    },
+    {
+        "info": "The phoenix rises from its ashes every 100 years.",
+        "question": "How often does the phoenix rise from its ashes?",
+        "answer": "every 100 years"
+    },
+    {
+        "info": "The cursed amulet brings 13 years of bad luck.",
+        "question": "How many years of bad luck does the cursed amulet bring?",
+        "answer": "13"
+    },
+    {
+        "info": "The ancient grimoire is bound in dragon leather.",
+        "question": "What is the grimoire bound in?",
+        "answer": "dragon leather"
+    },
+    {
+        "info": "The goblin king's crown is studded with 12 emeralds.",
+        "question": "How many emeralds are on the goblin king's crown?",
+        "answer": "12"
+    },
+    {
+        "info": "The spell book contains 300 different spells.",
+        "question": "How many spells are in the spell book?",
+        "answer": "300"
+    },
+    {
+        "info": "The magical forest is protected by ancient wards.",
+        "question": "What protects the magical forest?",
+        "answer": "ancient wards"
+    },
+    {
+        "info": "The unicorn's horn can heal any wound.",
+        "question": "What can the unicorn's horn do?",
+        "answer": "heal any wound"
+    },
+    {
+        "info": "The mermaids sing songs in the language of the sea.",
+        "question": "In what language do the mermaids sing?",
+        "answer": "the language of the sea"
+    },
+    {
+        "info": "The enchanted mirror shows your true self.",
+        "question": "What does the enchanted mirror show?",
+        "answer": "your true self"
+    },
+    {
+        "info": "The potion shop is located in the hidden village.",
+        "question": "Where is the potion shop located?",
+        "answer": "the hidden village"
+    },
+    {
+        "info": "The cursed castle has 99 locked doors.",
+        "question": "How many locked doors does the cursed castle have?",
+        "answer": "99"
+    },
+    {
+        "info": "The elven king lives for 500 years.",
+        "question": "How long does the elven king live?",
+        "answer": "500 years"
+    }
+]
+
+# ---------------------------
+# 6. Geography Question Pool
+# ---------------------------
+
+geography_question_pool = [
+    {
+        "info": "Tokyo is the capital of Japan.",
+        "question": "What is the capital of Japan?",
+        "answer": "tokyo"
+    },
+    {
+        "info": "The Great Lakes are located in North America.",
+        "question": "Where are the Great Lakes located?",
+        "answer": "north america"
+    },
+    {
+        "info": "Mount Kilimanjaro is the highest mountain in Africa.",
+        "question": "What is the highest mountain in Africa?",
+        "answer": "mount kilimanjaro"
+    },
+    {
+        "info": "New Zealand consists of two main islands.",
+        "question": "How many main islands does New Zealand consist of?",
+        "answer": "two"
+    },
+    {
+        "info": "The Mediterranean Sea borders 21 countries.",
+        "question": "How many countries border the Mediterranean Sea?",
+        "answer": "21"
+    },
+    {
+        "info": "Bangkok is the capital of Thailand.",
+        "question": "What is the capital of Thailand?",
+        "answer": "bangkok"
+    },
+    {
+        "info": "The Andes Mountains span across South America.",
+        "question": "Which continent do the Andes Mountains span across?",
+        "answer": "south america"
+    },
+    {
+        "info": "Singapore is located at the southern tip of Malaysia.",
+        "question": "Where is Singapore located?",
+        "answer": "at the southern tip of malaysia"
+    },
+    {
+        "info": "The Kalahari Desert covers parts of Botswana, Namibia, and South Africa.",
+        "question": "Which countries does the Kalahari Desert cover?",
+        "answer": "botswana, namibia, and south africa"
+    },
+    {
+        "info": "The Rhine River flows through Germany, France, and the Netherlands.",
+        "question": "Which countries does the Rhine River flow through?",
+        "answer": "germany, france, and the netherlands"
+    },
+    {
+        "info": "Kenya is located in East Africa.",
+        "question": "In which region is Kenya located?",
+        "answer": "east africa"
+    },
+    {
+        "info": "The Suez Canal connects Europe to Asia.",
+        "question": "What does the Suez Canal connect?",
+        "answer": "europe to asia"
+    },
+    {
+        "info": "Switzerland has 26 cantons.",
+        "question": "How many cantons does Switzerland have?",
+        "answer": "26"
+    },
+    {
+        "info": "The Arctic Ocean is the smallest ocean.",
+        "question": "Which is the smallest ocean?",
+        "answer": "the arctic ocean"
+    },
+    {
+        "info": "Buenos Aires is the capital of Argentina.",
+        "question": "What is the capital of Argentina?",
+        "answer": "buenos aires"
+    },
+    {
+        "info": "The Black Sea is bordered by 6 countries.",
+        "question": "How many countries border the Black Sea?",
+        "answer": "6"
+    },
+    {
+        "info": "Stockholm is the capital of Sweden.",
+        "question": "What is the capital of Sweden?",
+        "answer": "stockholm"
+    },
+    {
+        "info": "The Sahara Desert is in North Africa.",
+        "question": "In which region is the Sahara Desert located?",
+        "answer": "north africa"
+    },
+    {
+        "info": "The Trans-Siberian Railway is the longest railway line in the world.",
+        "question": "What is the longest railway line in the world?",
+        "answer": "the trans-siberian railway"
+    },
+    {
+        "info": "Madagascar is an island nation off the coast of Africa.",
+        "question": "What is Madagascar?",
+        "answer": "an island nation off the coast of africa"
+    }
+]
