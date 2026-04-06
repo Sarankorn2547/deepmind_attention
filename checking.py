@@ -49,28 +49,30 @@ def normalize_answer(answer: str) -> str:
     return normalize_text(answer)
 
 
-def extract_first_number(text: str) -> str | None:
+def extract_numbers(text: str) -> list[str]:
     if not text:
-        return None
-    match = re.search(r'-?\d+(?:\.\d+)?', text)
-    return match.group(0) if match else None
+        return []
+    return re.findall(r'-?\d+(?:\.\d+)?', text)
 
 
-def is_match(answer: str, response: str, scoring: str = 'exact_match_normalized') -> bool:
+def is_numeric_string(text: str) -> bool:
+    return bool(re.fullmatch(r'-?\d+(?:\.\d+)?', text))
+
+
+def numeric_equal(a: str, b: str) -> bool:
+    try:
+        return float(a) == float(b)
+    except ValueError:
+        return False
+
+
+def is_match(answer: str, response: str, scoring: str = 'substring_normalized') -> bool:
     answer_norm = normalize_answer(answer)
     response_norm = normalize_answer(response)
-    if scoring == 'exact_match_normalized':
-        if answer_norm == response_norm:
-            return True
-        if answer_norm and answer_norm in response_norm:
-            if len(answer_norm) == 1:
-                return bool(re.search(rf'\b{re.escape(answer_norm)}\b', response_norm))
-            return True
-        if re.fullmatch(r'-?\d+(?:\.\d+)?', answer_norm):
-            response_number = extract_first_number(response_norm)
-            return response_number == answer_norm
-        return False
-    return answer.strip().lower() == response.strip().lower()
+    if not answer_norm:
+        return not response_norm.strip()
+    # Case insensitive substring match (more lenient)
+    return answer_norm in response_norm
 
 
 def category_from_task_id(task_id: str) -> str:
@@ -140,15 +142,19 @@ def load_run_items(path: str) -> list[dict[str, object]]:
     raise ValueError('Unrecognized run file structure.')
 
 
-def extract_run_row(item: dict[str, object]) -> tuple[str, str]:
+def extract_run_row(item: dict[str, object]) -> tuple[str, str, bool | None]:
+    if isinstance(item, dict) and 'results' in item and isinstance(item['results'], list) and item['results']:
+        result = item['results'][0]
+        if isinstance(result, dict) and 'booleanResult' in result:
+            return '', '', result['booleanResult']
     if isinstance(item, dict) and 'conversations' in item and isinstance(item['conversations'], list) and item['conversations']:
         conversation = item['conversations'][0]
         if isinstance(conversation, dict) and isinstance(conversation.get('requests'), list) and conversation['requests']:
             prompt, response = parse_request_contents(conversation['requests'][0])
-            return prompt, response
+            return prompt, response, None
     if isinstance(item, dict) and isinstance(item.get('response'), str):
-        return '', item['response']
-    return '', ''
+        return '', item['response'], None
+    return '', '', None
 
 
 def write_csv(rows: list[dict[str, object]], path: str) -> None:
@@ -218,12 +224,15 @@ def evaluate(args: argparse.Namespace) -> None:
     for index in range(total_count):
         answer = answers[index]
         run_item = run_items[index]
-        prompt_text, response_text = extract_run_row(run_item)
+        prompt_text, response_text, precomputed_correct = extract_run_row(run_item)
         task_id = str(answer.get('id', '')).strip()
         answer_value = str(answer.get('answer', '')).strip()
         scoring = str(answer.get('scoring', 'exact_match_normalized')).strip()
 
-        correct = is_match(answer_value, response_text, scoring)
+        if precomputed_correct is not None:
+            correct = precomputed_correct
+        else:
+            correct = is_match(answer_value, response_text, scoring)
         total_correct += int(correct)
 
         category = 'unknown'

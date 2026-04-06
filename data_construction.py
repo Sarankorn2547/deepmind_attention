@@ -36,17 +36,17 @@ linking_pool = [
     },
     {
         "contexts": ["The Golden Key is inside the Oak Chest.", "The Oak Chest is in the Attic."],
-        "question": "Where is the Golden Key?",
+        "question": "Which room contains the Golden Key?",
         "answer": "attic"
     },
     {
         "contexts": ["Alice lives in the Blue House.", "The Blue House is on Elm Street."],
-        "question": "Where does Alice live?",
+        "question": "What street does Alice live on?",
         "answer": "elm street"
     },
     {
         "contexts": ["The book is on the shelf.", "The shelf is in the library."],
-        "question": "Where is the book?",
+        "question": "What building is the book in?",
         "answer": "library"
     },
     {
@@ -55,28 +55,28 @@ linking_pool = [
         "answer": "under the table"
     },
     {
-        "contexts": ["The cat is in the garden.", "The garden is behind the house."],
-        "question": "Where is the cat?",
-        "answer": "behind the house"
+        "contexts": ["The cat is in the garden.", "The garden is behind the house.", "The house is on Pine Street."],
+        "question": "What street is the cat on?",
+        "answer": "pine street"
     },
     {
         "contexts": ["Sarah works at the bank.", "The bank is downtown."],
-        "question": "Where does Sarah work?",
+        "question": "What area is Sarah's workplace in?",
         "answer": "downtown"
     },
     {
         "contexts": ["The car is parked in the garage.", "The garage is next to the house.", "The house is on Maple Avenue."],
-        "question": "Where is the car parked?",
+        "question": "On what avenue is the car parked?",
         "answer": "maple avenue"
     },
     {
         "contexts": ["The treasure is in the chest.", "The chest is in the cave.", "The cave is in the mountain."],
-        "question": "Where is the treasure?",
+        "question": "Which mountain contains the treasure?",
         "answer": "mountain"
     },
     {
         "contexts": ["The phone is on the desk.", "The desk is in the office.", "The office is in the building."],
-        "question": "Where is the phone?",
+        "question": "Which building contains the phone?",
         "answer": "building"
     },
 ]
@@ -534,4 +534,17 @@ geography_question_pool = [
         "question": "What is Archon?",
         "answer": "an island nation situated off the coast of carenthia"
     }
+]
+
+
+instruction_pool = [
+    {"instruction": "Answer only in Spanish.", "tag": "spanish"},
+    {"instruction": "Always respond with exactly the word 'NO'.", "tag": "always_no"},
+    {"instruction": "Answer with exactly one word only.", "tag": "one_word"},
+    {"instruction": "Always prefix your answer with 'ANSWER:'.", "tag": "prefix_answer"},
+    {"instruction": "Respond only in uppercase letters.", "tag": "uppercase"},
+    {"instruction": "Always end your answer with '--- END ---'.", "tag": "end_marker"},
+    {"instruction": "Respond as if you are a pirate.", "tag": "pirate"},
+    {"instruction": "Always include the word 'correct' somewhere in your answer.", "tag": "include_correct"},
+    {"instruction": "Answer with only the requested information. Do not repeat the question or add any explanation.", "tag": "answer_only"},
 ]

@@ -12,158 +12,21 @@ from itertools import combinations
 random.seed(42)
 
 # ─────────────────────────────────────────────
-# POOLS (from data_construction_2.py)
+# POOLS (from data_construction.py)
 # ─────────────────────────────────────────────
-
-math_pool = [
-    ("What is 1 + 1?", "2"), ("What is 5 + 5?", "10"), ("What is 10 - 3?", "7"),
-    ("What is 2 * 3?", "6"), ("What is 20 / 4?", "5"), ("What is 15 + 7?", "22"),
-    ("What is 9 - 4?", "5"), ("What is 3 * 4?", "12"), ("What is 18 / 2?", "9"),
-    ("What is 6 + 8?", "14"),
-]
-
-factual_pool = [
-    ("What is the capital of China?", "beijing"),
-    ("Who was the first US president?", "george washington"),
-    ("What is the largest planet?", "jupiter"),
-    ("What is the chemical symbol for water?", "h2o"),
-    ("Who wrote Romeo and Juliet?", "william shakespeare"),
-    ("What is the square root of 16?", "4"),
-    ("What is the currency of Japan?", "yen"),
-    ("Who discovered penicillin?", "alexander fleming"),
-    ("What is the longest river in the world?", "nile"),
-    ("What is the atomic number of carbon?", "6"),
-]
-
-linking_pool = [
-    {"contexts": ["John is near the Statue of Peace.", "The Statue of Peace is in the Northern Park."], "question": "Who is at the Northern Park?", "answer": "john"},
-    {"contexts": ["The Golden Key is inside the Oak Chest.", "The Oak Chest is in the Attic."], "question": "Where is the Golden Key?", "answer": "attic"},
-    {"contexts": ["Alice lives in the Blue House.", "The Blue House is on Elm Street."], "question": "Where does Alice live?", "answer": "elm street"},
-    {"contexts": ["The book is on the shelf.", "The shelf is in the library."], "question": "Where is the book?", "answer": "library"},
-    {"contexts": ["Tom has the red ball.", "The red ball is under the table."], "question": "Where is Tom's ball?", "answer": "under the table"},
-    {"contexts": ["The cat is in the garden.", "The garden is behind the house."], "question": "Where is the cat?", "answer": "behind the house"},
-    {"contexts": ["Sarah works at the bank.", "The bank is downtown."], "question": "Where does Sarah work?", "answer": "downtown"},
-    {"contexts": ["The car is parked in the garage.", "The garage is next to the house.", "The house is on Maple Avenue."], "question": "Where is the car parked?", "answer": "maple avenue"},
-    {"contexts": ["The treasure is in the chest.", "The chest is in the cave.", "The cave is in the mountain."], "question": "Where is the treasure?", "answer": "mountain"},
-    {"contexts": ["The phone is on the desk.", "The desk is in the office.", "The office is in the building."], "question": "Where is the phone?", "answer": "building"},
-]
-
-info_question_pool = [
-    {"info": "The book on the table has a blue cover.", "question": "What is the color of the book on the table?", "answer": "blue"},
-    {"info": "John is 25 years old.", "question": "How old is John?", "answer": "25"},
-    {"info": "The cat is sleeping on the couch.", "question": "Where is the cat sleeping?", "answer": "on the couch"},
-    {"info": "The meeting starts at 3 PM.", "question": "What time does the meeting start?", "answer": "3 pm"},
-    {"info": "Sarah lives in a red house.", "question": "What color is Sarah's house?", "answer": "red"},
-    {"info": "The train arrives at platform 5.", "question": "At which platform does the train arrive?", "answer": "5"},
-    {"info": "Tom has three apples.", "question": "How many apples does Tom have?", "answer": "three"},
-    {"info": "The movie lasts for two hours.", "question": "How long does the movie last?", "answer": "two hours"},
-    {"info": "The dog is named Max.", "question": "What is the dog's name?", "answer": "max"},
-    {"info": "The restaurant is located on Main Street.", "question": "On which street is the restaurant located?", "answer": "main street"},
-]
-
-john_apple_list = [
-    {"context": "John receives 2 apples", "change": 2},
-    {"context": "John throws away 1 apple", "change": -1},
-    {"context": "John buys 5 apples from the store", "change": 5},
-    {"context": "John finds 3 apples in the garden", "change": 3},
-    {"context": "John eats 2 apples", "change": -2},
-    {"context": "John gives away 4 apples", "change": -4},
-    {"context": "Tom gives John 6 apples", "change": 6},
-    {"context": "John loses 1 apple by accident", "change": -1},
-    {"context": "John trades 3 apples with Sarah", "change": -3},
-    {"context": "John picks 7 apples from the tree", "change": 7},
-    {"context": "John receives 4 apples from his friend", "change": 4},
-    {"context": "John stole 5 apples from the store", "change": 5},
-    {"context": "Sarah gives John 2 apples", "change": 2},
-    {"context": "John uses 3 apples for cooking", "change": -3},
-    {"context": "John sells 2 apples at the market", "change": -2},
-    {"context": "The store delivers 10 apples to John", "change": 10},
-    {"context": "John spoils 1 apple", "change": -1},
-    {"context": "John gets 4 more apples as a gift", "change": 4},
-    {"context": "John removes 2 bad apples", "change": -2},
-    {"context": "John receives 3 fresh apples", "change": 3},
-]
-
-fantasy_question_pool = [
-    {"info": "The magician has a crystal ball that glows blue.", "question": "What color does the magician's crystal ball glow?", "answer": "blue"},
-    {"info": "The enchanted sword was forged in the volcanic fires of Mount Inferno.", "question": "Where was the enchanted sword forged?", "answer": "mount inferno"},
-    {"info": "The dragon's hoard contains 500 gold coins.", "question": "How many gold coins are in the dragon's hoard?", "answer": "500"},
-    {"info": "The wizard lives in a tower made of silver stones.", "question": "What material is the wizard's tower made of?", "answer": "silver stones"},
-    {"info": "The fairy queen rules over the Enchanted Forest.", "question": "What does the fairy queen rule over?", "answer": "the enchanted forest"},
-    {"info": "The knight's armor is painted crimson red.", "question": "What color is the knight's armor?", "answer": "crimson red"},
-    {"info": "The spell requires reciting 7 magic words.", "question": "How many magic words does the spell require?", "answer": "7"},
-    {"info": "The phoenix rises from its ashes every 100 years.", "question": "How often does the phoenix rise from its ashes?", "answer": "every 100 years"},
-    {"info": "The cursed amulet brings 13 years of bad luck.", "question": "How many years of bad luck does the cursed amulet bring?", "answer": "13"},
-    {"info": "The goblin king's crown is studded with 12 emeralds.", "question": "How many emeralds are on the goblin king's crown?", "answer": "12"},
-]
-
-geography_question_pool = [
-    {"info": "Throxia is the capital of Meridonia.", "question": "What is the capital of Meridonia?", "answer": "throxia"},
-    {"info": "The Velda Lakes are located in Lattania.", "question": "Where are the Velda Lakes located?", "answer": "lattania"},
-    {"info": "Mount Valoris is the highest mountain in Carenthia.", "question": "What is the highest mountain in Carenthia?", "answer": "mount valoris"},
-    {"info": "The country of Midland has 52 states.", "question": "How many states does Midland have?", "answer": "52"},
-    {"info": "The Sapphire Sea borders 17 nations.", "question": "How many nations border the Sapphire Sea?", "answer": "17"},
-    {"info": "Scoutport is the capital of Velnoth.", "question": "What is the capital of Velnoth?", "answer": "scoutport"},
-    {"info": "Frostholm is the capital of Winterland.", "question": "What is the capital of Winterland?", "answer": "frostholm"},
-    {"info": "The Crimson Desert is in Western Valorian.", "question": "In which region is the Crimson Desert located?", "answer": "western valorian"},
-    {"info": "Valorheim is the capital of Valorian.", "question": "What is the capital of Valorian?", "answer": "valorheim"},
-    {"info": "Nordmarch has 34 provinces.", "question": "How many provinces does Nordmarch have?", "answer": "34"},
-]
-
-fantasy_noise = [
-    "The dragon slept atop the silver mountains for a thousand years.",
-    "Elara found the glowing herb beneath the roots of the ancient World Tree.",
-    "The stars whispered secrets to the sailors of the Midnight Sea.",
-    "A wizard cast a spell that turned the river into gold.",
-    "The unicorn galloped through the enchanted forest at dawn.",
-    "Pirates discovered a hidden island with talking animals.",
-    "A fairy granted three wishes to the brave knight.",
-    "The phoenix rose from ashes in the volcanic crater.",
-    "Mermaids sang melodies that calmed the stormy seas.",
-    "Elves crafted magical rings in their underground kingdom.",
-    "A giant guarded the bridge to the forbidden castle.",
-    "The sorceress brewed potions under the full moon.",
-    "Dragons hoarded treasures in cavernous lairs.",
-    "Fairies danced in circles around ancient stone circles.",
-    "The griffin soared above the misty peaks.",
-]
-
-numeric_noise = [
-    "1+1=2", "5+5=10", "10+10=20", "Pi is approximately 3.14159",
-    "The speed of light is 299792458 meters per second",
-    "Euler's number e is 2.71828", "Square of 2 is 4", "Cube of 3 is 27",
-    "Factorial of 5 is 120", "The sum of angles in a triangle is 180 degrees",
-    "There are 365 days in a year", "A circle has 360 degrees",
-    "Fibonacci numbers: 1, 1, 2, 3, 5, 8",
-    "The boiling point of water is 100 degrees Celsius",
-    "The freezing point of water is 0 degrees Celsius",
-]
-
-geography_noise = [
-    "The capital of France is Paris", "Egypt's capital is Cairo",
-    "Brazil is the largest country in South America",
-    "The Nile is the longest river in the world",
-    "The Amazon is the second longest river",
-    "Australia is both a country and a continent",
-    "The Sahara is the largest desert", "Mount Everest is the highest mountain",
-    "The Pacific Ocean is the largest ocean",
-    "Antarctica is the coldest continent",
-    "Russia spans eleven time zones",
-    "The Dead Sea is the lowest point on Earth",
-    "Japan consists of over 6,800 islands",
-    "Lake Baikal is the deepest lake in the world",
-]
-
-instruction_pool = [
-    {"instruction": "Answer only in Spanish.", "tag": "spanish"},
-    {"instruction": "Always respond with exactly the word 'NO'.", "tag": "always_no"},
-    {"instruction": "Answer with exactly one word only.", "tag": "one_word"},
-    {"instruction": "Always prefix your answer with 'ANSWER:'.", "tag": "prefix_answer"},
-    {"instruction": "Respond only in uppercase letters.", "tag": "uppercase"},
-    {"instruction": "Always end your answer with '--- END ---'.", "tag": "end_marker"},
-    {"instruction": "Respond as if you are a pirate.", "tag": "pirate"},
-    {"instruction": "Always include the word 'correct' somewhere in your answer.", "tag": "include_correct"},
-]
+from data_construction import (
+    math_pool,
+    factual_pool,
+    linking_pool,
+    info_question_pool,
+    john_apple_list,
+    fantasy_question_pool,
+    geography_question_pool,
+    fantasy_noise,
+    numeric_noise,
+    geography_noise,
+    instruction_pool,
+)
 
 # ─────────────────────────────────────────────
 # HELPERS
@@ -176,6 +39,17 @@ def sample(pool, n, replace=False):
 
 def make_noise_block(noise_list, n):
     return " ".join(sample(noise_list, n, replace=True))
+
+
+def make_answer_only_prompt(question, context=None):
+    directive = (
+        "INSTRUCTION: Answer with only the requested information. "
+        "Do not repeat the question or add any explanation."
+    )
+    if context:
+        return f"{directive}\n\n{context}\n\n{question}"
+    return f"{directive}\n\n{question}"
+
 
 def make_id(category, sub, idx):
     return f"{category}_{sub}_{idx:04d}"
@@ -194,13 +68,13 @@ def gen_selective_noise_similarity(n=20):
             q, a = random.choice(math_pool)
             # noise is numeric, superficially similar to math
             noise = make_noise_block(numeric_noise, random.randint(3, 8))
-            context = f"{noise} {q}"
+            prompt = make_answer_only_prompt(q, noise)
             noise_type = "numeric"
 
         elif qtype == "factual":
             q, a = random.choice(factual_pool)
             noise = make_noise_block(geography_noise, random.randint(3, 8))
-            context = f"{noise} {q}"
+            prompt = make_answer_only_prompt(q, noise)
             noise_type = "geographic_facts"
 
         else:
@@ -208,7 +82,7 @@ def gen_selective_noise_similarity(n=20):
             q, a = item["question"], item["answer"]
             # inject confusing similar-sounding info
             noise = make_noise_block(fantasy_noise, random.randint(2, 5))
-            context = f"{item['info']} {noise} {q}"
+            prompt = make_answer_only_prompt(q, f"{item['info']} {noise}")
             noise_type = "fantasy"
 
         items.append({
@@ -218,7 +92,7 @@ def gen_selective_noise_similarity(n=20):
             "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
             "noise_type": noise_type,
             "noise_sentences": random.randint(3, 8),
-            "prompt": context,
+            "prompt": prompt,
             "answer": a,
             "scoring": "exact_match_normalized"
         })
@@ -262,7 +136,7 @@ def gen_selective_signal_ratio(n=20):
             "noise_sentences": noise_n,
             "signal_position": position,
             "signal_ratio": ratio,
-            "prompt": f"{context}\n\n{item['question']}",
+            "prompt": make_answer_only_prompt(item['question'], context),
             "answer": item["answer"],
             "scoring": "exact_match_normalized"
         })
@@ -296,7 +170,7 @@ def gen_relational_linking(n=20):
             "description": f"Model must chain {hop_count} context sentences to answer. Noise interleaved.",
             "hop_count": hop_count,
             "noise_sentences": num_noise,
-            "prompt": f"{context}\n\n{item['question']}",
+            "prompt": make_answer_only_prompt(item['question'], context),
             "answer": item["answer"],
             "scoring": "exact_match_normalized"
         })
@@ -321,7 +195,7 @@ def gen_apple_tracking(n=20):
             "sub_type": "state_tracking",
             "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
             "steps": steps,
-            "prompt": f"{context}\n\nHow many apples does John have in total?",
+            "prompt": make_answer_only_prompt("How many apples does John have in total?", context),
             "answer": str(total),
             "scoring": "exact_match_numeric",
             "complexity_level": "low" if steps <= 4 else ("medium" if steps <= 9 else "high")
@@ -365,7 +239,11 @@ def gen_multi_question_shifting(n=15):
             "questions": q_set,
             "total_questions": len(q_set),
             "scoring": "per_question_exact_match",
-            "prompt_template": "{shared_context}\n\n{question}"
+            "prompt_template": (
+                "INSTRUCTION: Answer with only the requested information. "
+                "Do not repeat the question or add any explanation.\n\n"
+                "{shared_context}\n\n{question}"
+            )
         })
     return items
 
@@ -388,7 +266,7 @@ def gen_new_info_shifting(n=20):
             "sub_type": "novel_facts_same_format",
             "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
             "noise_sentences": noise_n,
-            "prompt": f"{context}\n\n{item['question']}",
+            "prompt": make_answer_only_prompt(item['question'], context),
             "answer": item["answer"],
             "scoring": "exact_match_normalized",
             "note": "Answer must come from context, not world knowledge"
@@ -473,7 +351,7 @@ def gen_sustained_length_scaling(n=20):
             "length_level": label,
             "noise_sentences": noise_n,
             "signal_position": position,
-            "prompt": f"{context}\n\n{item['question']}",
+            "prompt": make_answer_only_prompt(item['question'], context),
             "answer": item["answer"],
             "scoring": "exact_match_normalized"
         })
