@@ -163,3 +163,167 @@ geography_noise = [
     "Australia has the most venomous snakes",
     "The Maldives is the lowest country above sea level",
 ]
+
+# ---------------------------
+# 3. Info-Question Pool
+# ---------------------------
+
+info_question_pool = [
+    {
+        "info": "The book on the table has a blue cover.",
+        "question": "What is the color of the book on the table?",
+        "answer": "blue"
+    },
+    {
+        "info": "John is 25 years old.",
+        "question": "How old is John?",
+        "answer": "25"
+    },
+    {
+        "info": "The cat is sleeping on the couch.",
+        "question": "Where is the cat sleeping?",
+        "answer": "on the couch"
+    },
+    {
+        "info": "The meeting starts at 3 PM.",
+        "question": "What time does the meeting start?",
+        "answer": "3 pm"
+    },
+    {
+        "info": "Sarah lives in a red house.",
+        "question": "What color is Sarah's house?",
+        "answer": "red"
+    },
+    {
+        "info": "The train arrives at platform 5.",
+        "question": "At which platform does the train arrive?",
+        "answer": "5"
+    },
+    {
+        "info": "Tom has three apples.",
+        "question": "How many apples does Tom have?",
+        "answer": "three"
+    },
+    {
+        "info": "The movie lasts for two hours.",
+        "question": "How long does the movie last?",
+        "answer": "two hours"
+    },
+    {
+        "info": "The dog is named Max.",
+        "question": "What is the dog's name?",
+        "answer": "max"
+    },
+    {
+        "info": "The restaurant is located on Main Street.",
+        "question": "On which street is the restaurant located?",
+        "answer": "main street"
+    },
+    {
+        "info": "Lisa wears a green dress.",
+        "question": "What color dress does Lisa wear?",
+        "answer": "green"
+    },
+    {
+        "info": "The package weighs 5 kilograms.",
+        "question": "How much does the package weigh?",
+        "answer": "5 kilograms"
+    },
+    {
+        "info": "The room has four windows.",
+        "question": "How many windows does the room have?",
+        "answer": "four"
+    },
+    {
+        "info": "The car is parked in spot 12.",
+        "question": "In which spot is the car parked?",
+        "answer": "12"
+    },
+    {
+        "info": "Mike plays the guitar.",
+        "question": "What instrument does Mike play?",
+        "answer": "guitar"
+    },
+    {
+        "info": "The flight departs at 8 AM.",
+        "question": "What time does the flight depart?",
+        "answer": "8 am"
+    },
+    {
+        "info": "The cake is chocolate flavored.",
+        "question": "What flavor is the cake?",
+        "answer": "chocolate"
+    },
+    {
+        "info": "Anna has long hair.",
+        "question": "What kind of hair does Anna have?",
+        "answer": "long"
+    },
+    {
+        "info": "The store opens at 9 AM.",
+        "question": "What time does the store open?",
+        "answer": "9 am"
+    },
+    {
+        "info": "The bicycle has two wheels.",
+        "question": "How many wheels does the bicycle have?",
+        "answer": "two"
+    }
+]
+
+# ---------------------------
+# 4. John Apple List (Context + Change)
+# ---------------------------
+
+john_apple_list = [
+    {"context": "John receives 2 apples", "change": 2},
+    {"context": "John throws away 1 apple", "change": -1},
+    {"context": "John buys 5 apples from the store", "change": 5},
+    {"context": "John finds 3 apples in the garden", "change": 3},
+    {"context": "John eats 2 apples", "change": -2},
+    {"context": "John gives away 4 apples", "change": -4},
+    {"context": "Tom gives John 6 apples", "change": 6},
+    {"context": "John loses 1 apple by accident", "change": -1},
+    {"context": "John trades 3 apples with Sarah", "change": -3},
+    {"context": "John picks 7 apples from the tree", "change": 7},
+    {"context": "John receives 4 apples from his friend", "change": 4},
+    {"context": "John counts 5 apples on the table", "change": 5},
+    {"context": "Sarah gives John 2 apples", "change": 2},
+    {"context": "John prepares 3 apples for cooking", "change": -3},
+    {"context": "John stores 8 apples in the fridge", "change": 8},
+    {"context": "John sells 2 apples at the market", "change": -2},
+    {"context": "The store delivers 10 apples to John", "change": 10},
+    {"context": "John spoils 1 apple", "change": -1},
+    {"context": "John gets 4 more apples as a gift", "change": 4},
+    {"context": "John removes 2 bad apples", "change": -2},
+    {"context": "John receives 3 fresh apples", "change": 3},
+    {"context": "John donates 5 apples to the food bank", "change": -5},
+    {"context": "John harvests 6 apples", "change": 6},
+    {"context": "John shares 2 apples with his family", "change": -2},
+    {"context": "John collects 9 apples", "change": 9},
+    {"context": "John discards 3 rotten apples", "change": -3},
+    {"context": "John purchases 7 apples", "change": 7},
+    {"context": "John loses 2 apples in the bag", "change": -2},
+    {"context": "John gets handed 4 apples by his neighbor", "change": 4},
+    {"context": "John takes 5 apples from the basket", "change": 5},
+    {"context": "John puts back 1 apple", "change": -1},
+    {"context": "John receives a batch of 8 apples", "change": 8},
+    {"context": "John eats 3 apples for lunch", "change": -3},
+    {"context": "John finds 2 more apples", "change": 2},
+    {"context": "John gets 6 apples from the farmer", "change": 6},
+    {"context": "John throws out 2 apples", "change": -2},
+    {"context": "John picks up 4 apples from the ground", "change": 4},
+    {"context": "John saves 7 apples for later", "change": 7},
+    {"context": "John loses 4 apples during transport", "change": -4},
+    {"context": "John adds 3 apples to the collection", "change": 3},
+    {"context": "John consumes 2 apples", "change": -2},
+    {"context": "John attracts 5 apples in trade", "change": 5},
+    {"context": "John removes 3 apples for juice", "change": -3},
+    {"context": "John accumulates 9 apples", "change": 9},
+    {"context": "John loses 1 apple on the way", "change": -1},
+    {"context": "John receives 2 more apples", "change": 2},
+    {"context": "John cuts 4 apples for a pie", "change": -4},
+    {"context": "John gathers 5 apples together", "change": 5},
+    {"context": "John gives back 2 apples", "change": -2},
+    {"context": "John collects 6 more apples", "change": 6},
+]
