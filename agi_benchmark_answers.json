@@ -1,12 +1,12 @@
 [
   {
     "id": "selective_noise_sim_0000",
-    "answer": "25",
+    "answer": "3 pm",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_noise_sim_0001",
-    "answer": "25",
+    "answer": "3 pm",
     "scoring": "exact_match_normalized"
   },
   {
@@ -36,12 +36,12 @@
   },
   {
     "id": "selective_noise_sim_0007",
-    "answer": "25",
+    "answer": "couch",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_noise_sim_0008",
-    "answer": "max",
+    "answer": "long",
     "scoring": "exact_match_normalized"
   },
   {
@@ -51,12 +51,12 @@
   },
   {
     "id": "selective_noise_sim_0010",
-    "answer": "two hours",
+    "answer": "guitar",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_noise_sim_0011",
-    "answer": "main street",
+    "answer": "9 am",
     "scoring": "exact_match_normalized"
   },
   {
@@ -66,12 +66,12 @@
   },
   {
     "id": "selective_noise_sim_0013",
-    "answer": "two hours",
+    "answer": "guitar",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_noise_sim_0014",
-    "answer": "red",
+    "answer": "max",
     "scoring": "exact_match_normalized"
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "id": "selective_noise_sim_0016",
-    "answer": "3 pm",
+    "answer": "3",
     "scoring": "exact_match_normalized"
   },
   {
@@ -96,92 +96,92 @@
   },
   {
     "id": "selective_noise_sim_0019",
-    "answer": "on the couch",
+    "answer": "5",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_signal_ratio_0000",
-    "answer": "three",
+    "answer": "4",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_signal_ratio_0001",
-    "answer": "on the couch",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0002",
-    "answer": "crimson red",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0003",
-    "answer": "the enchanted forest",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0004",
-    "answer": "25",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0005",
-    "answer": "13",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0006",
-    "answer": "max",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0007",
-    "answer": "7",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0008",
-    "answer": "3 pm",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0009",
-    "answer": "blue",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0010",
-    "answer": "on the couch",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0011",
-    "answer": "mount inferno",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "selective_signal_ratio_0012",
     "answer": "red",
     "scoring": "exact_match_normalized"
   },
   {
+    "id": "selective_signal_ratio_0002",
+    "answer": "12",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0003",
+    "answer": "13",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0004",
+    "answer": "3 pm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0005",
+    "answer": "hidden village",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0006",
+    "answer": "chocolate",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0007",
+    "answer": "ancient wards",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0008",
+    "answer": "3",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0009",
+    "answer": "inferno",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0010",
+    "answer": "5",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0011",
+    "answer": "eye of newt, frog tongue, and spider silk",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0012",
+    "answer": "main street",
+    "scoring": "exact_match_normalized"
+  },
+  {
     "id": "selective_signal_ratio_0013",
-    "answer": "blue",
+    "answer": "inferno",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_signal_ratio_0014",
-    "answer": "7",
+    "answer": "300",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_signal_ratio_0015",
-    "answer": "three",
+    "answer": "4",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_signal_ratio_0016",
-    "answer": "main street",
+    "answer": "9 am",
     "scoring": "exact_match_normalized"
   },
   {
@@ -191,12 +191,12 @@
   },
   {
     "id": "selective_signal_ratio_0018",
-    "answer": "7",
+    "answer": "ancient wards",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "selective_signal_ratio_0019",
-    "answer": "max",
+    "answer": "long",
     "scoring": "exact_match_normalized"
   },
   {
@@ -211,22 +211,22 @@
   },
   {
     "id": "relational_linking_0002",
-    "answer": "behind the house",
+    "answer": "pine street",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "relational_linking_0003",
-    "answer": "mountain",
+    "answer": "dragon peak",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "relational_linking_0004",
-    "answer": "building",
+    "answer": "headquarters",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "relational_linking_0005",
-    "answer": "building",
+    "answer": "headquarters",
     "scoring": "exact_match_normalized"
   },
   {
@@ -236,7 +236,7 @@
   },
   {
     "id": "relational_linking_0007",
-    "answer": "mountain",
+    "answer": "dragon peak",
     "scoring": "exact_match_normalized"
   },
   {
@@ -291,7 +291,7 @@
   },
   {
     "id": "relational_linking_0018",
-    "answer": "mountain",
+    "answer": "dragon peak",
     "scoring": "exact_match_normalized"
   },
   {
@@ -301,97 +301,97 @@
   },
   {
     "id": "complexity_apple_tracking_0000",
-    "answer": "-4",
-    "scoring": "exact_match_numeric"
-  },
-  {
-    "id": "complexity_apple_tracking_0001",
     "answer": "19",
     "scoring": "exact_match_numeric"
   },
   {
+    "id": "complexity_apple_tracking_0001",
+    "answer": "39",
+    "scoring": "exact_match_numeric"
+  },
+  {
     "id": "complexity_apple_tracking_0002",
-    "answer": "22",
+    "answer": "15",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0003",
-    "answer": "25",
+    "answer": "21",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0004",
-    "answer": "-4",
+    "answer": "8",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0005",
-    "answer": "36",
+    "answer": "17",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0006",
-    "answer": "4",
+    "answer": "6",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0007",
-    "answer": "2",
+    "answer": "8",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0008",
-    "answer": "11",
+    "answer": "-13",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0009",
-    "answer": "26",
+    "answer": "-2",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0010",
-    "answer": "3",
+    "answer": "-2",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0011",
-    "answer": "23",
+    "answer": "18",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0012",
-    "answer": "12",
+    "answer": "9",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0013",
-    "answer": "29",
+    "answer": "12",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0014",
-    "answer": "27",
-    "scoring": "exact_match_numeric"
-  },
-  {
-    "id": "complexity_apple_tracking_0015",
     "answer": "-9",
     "scoring": "exact_match_numeric"
   },
   {
+    "id": "complexity_apple_tracking_0015",
+    "answer": "14",
+    "scoring": "exact_match_numeric"
+  },
+  {
     "id": "complexity_apple_tracking_0016",
-    "answer": "0",
+    "answer": "4",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0017",
-    "answer": "0",
+    "answer": "5",
     "scoring": "exact_match_numeric"
   },
   {
     "id": "complexity_apple_tracking_0018",
-    "answer": "13",
+    "answer": "48",
     "scoring": "exact_match_numeric"
   },
   {
@@ -401,107 +401,107 @@
   },
   {
     "id": "shifting_multi_q_0000_q0",
-    "answer": "red",
+    "answer": "max",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0000_q1",
-    "answer": "three",
+    "answer": "4",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0000_q2",
-    "answer": "34",
+    "answer": "island nation",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0000_q3",
-    "answer": "12",
+    "answer": "99",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0001_q0",
-    "answer": "34",
+    "answer": "silverstone railway",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0001_q1",
-    "answer": "every 100 years",
+    "answer": "healing",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0001_q2",
-    "answer": "25",
+    "answer": "3 pm",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0001_q3",
-    "answer": "blue",
+    "answer": "25",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0002_q0",
-    "answer": "max",
+    "answer": "5 kilograms",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0002_q1",
-    "answer": "western valorian",
+    "answer": "truth",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0002_q2",
-    "answer": "500",
+    "answer": "scoutport",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0002_q3",
-    "answer": "5",
+    "answer": "long",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0003_q0",
-    "answer": "5",
+    "answer": "4",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0003_q1",
-    "answer": "17",
+    "answer": "long",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0003_q2",
-    "answer": "max",
+    "answer": "eye of newt, frog tongue, and spider silk",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0003_q3",
-    "answer": "7",
+    "answer": "throxia",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0004_q0",
-    "answer": "lattania",
+    "answer": "2",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0004_q1",
-    "answer": "12",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0004_q2",
     "answer": "blue",
     "scoring": "per_question_exact_match"
   },
   {
+    "id": "shifting_multi_q_0004_q2",
+    "answer": "central valorian",
+    "scoring": "per_question_exact_match"
+  },
+  {
     "id": "shifting_multi_q_0004_q3",
-    "answer": "two hours",
+    "answer": "3 pm",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0005_q0",
-    "answer": "main street",
+    "answer": "500",
     "scoring": "per_question_exact_match"
   },
   {
@@ -511,77 +511,77 @@
   },
   {
     "id": "shifting_multi_q_0005_q2",
-    "answer": "13",
+    "answer": "at the eastern edge of silvere",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0005_q3",
-    "answer": "frostholm",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0006_q0",
-    "answer": "52",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0006_q1",
-    "answer": "three",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0006_q2",
-    "answer": "two hours",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0006_q3",
-    "answer": "blue",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0007_q0",
-    "answer": "3 pm",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0007_q1",
-    "answer": "52",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0007_q2",
-    "answer": "every 100 years",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0007_q3",
-    "answer": "red",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0008_q0",
-    "answer": "3 pm",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0008_q1",
-    "answer": "crimson red",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0008_q2",
-    "answer": "34",
-    "scoring": "per_question_exact_match"
-  },
-  {
-    "id": "shifting_multi_q_0008_q3",
     "answer": "main street",
     "scoring": "per_question_exact_match"
   },
   {
+    "id": "shifting_multi_q_0006_q0",
+    "answer": "nordmarch",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0006_q1",
+    "answer": "12",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0006_q2",
+    "answer": "8 am",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0006_q3",
+    "answer": "inferno",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q0",
+    "answer": "3",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q1",
+    "answer": "nordmarch",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q2",
+    "answer": "healing",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q3",
+    "answer": "max",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q0",
+    "answer": "3",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q1",
+    "answer": "dragon leather",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q2",
+    "answer": "island nation",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q3",
+    "answer": "9 am",
+    "scoring": "per_question_exact_match"
+  },
+  {
     "id": "shifting_multi_q_0009_q0",
-    "answer": "5",
+    "answer": "5 kilograms",
     "scoring": "per_question_exact_match"
   },
   {
@@ -591,137 +591,137 @@
   },
   {
     "id": "shifting_multi_q_0009_q2",
-    "answer": "3 pm",
+    "answer": "2",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0009_q3",
-    "answer": "17",
+    "answer": "graxland, ostmere, and darkholm",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0010_q0",
-    "answer": "34",
+    "answer": "at the eastern edge of silvere",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0010_q1",
-    "answer": "13",
+    "answer": "healing",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0010_q2",
-    "answer": "25",
+    "answer": "9 am",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0010_q3",
-    "answer": "max",
+    "answer": "chocolate",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0011_q0",
-    "answer": "three",
+    "answer": "12",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0011_q1",
-    "answer": "25",
+    "answer": "3 pm",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0011_q2",
-    "answer": "every 100 years",
+    "answer": "healing",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0011_q3",
-    "answer": "lattania",
+    "answer": "mount valoris",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0012_q0",
-    "answer": "mount inferno",
+    "answer": "500",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0012_q1",
-    "answer": "two hours",
+    "answer": "guitar",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0012_q2",
-    "answer": "max",
+    "answer": "chocolate",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0012_q3",
-    "answer": "valorheim",
+    "answer": "western valorian",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0013_q0",
-    "answer": "three",
+    "answer": "12",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0013_q1",
-    "answer": "mount valoris",
+    "answer": "17",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0013_q2",
-    "answer": "5",
+    "answer": "green",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0013_q3",
-    "answer": "the enchanted forest",
+    "answer": "every 100 years",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0014_q0",
-    "answer": "max",
+    "answer": "long",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0014_q1",
-    "answer": "scoutport",
+    "answer": "twilight ocean",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0014_q2",
-    "answer": "main street",
+    "answer": "9 am",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_multi_q_0014_q3",
-    "answer": "mount inferno",
+    "answer": "dragon leather",
     "scoring": "per_question_exact_match"
   },
   {
     "id": "shifting_new_info_0000",
-    "answer": "mount valoris",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0001",
-    "answer": "34",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0002",
-    "answer": "34",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0003",
     "answer": "17",
     "scoring": "exact_match_normalized"
   },
   {
+    "id": "shifting_new_info_0001",
+    "answer": "silverstone railway",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0002",
+    "answer": "island nation",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0003",
+    "answer": "graxland, ostmere, and darkholm",
+    "scoring": "exact_match_normalized"
+  },
+  {
     "id": "shifting_new_info_0004",
-    "answer": "frostholm",
+    "answer": "34",
     "scoring": "exact_match_normalized"
   },
   {
@@ -731,72 +731,72 @@
   },
   {
     "id": "shifting_new_info_0006",
-    "answer": "frostholm",
+    "answer": "twilight ocean",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "shifting_new_info_0007",
-    "answer": "lattania",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0008",
-    "answer": "throxia",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0009",
-    "answer": "western valorian",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0010",
-    "answer": "34",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0011",
-    "answer": "52",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0012",
-    "answer": "lattania",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "shifting_new_info_0013",
     "answer": "mount valoris",
     "scoring": "exact_match_normalized"
   },
   {
+    "id": "shifting_new_info_0008",
+    "answer": "lattania",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0009",
+    "answer": "9",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0010",
+    "answer": "silverstone railway",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0011",
+    "answer": "nordmarch",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0012",
+    "answer": "52",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0013",
+    "answer": "17",
+    "scoring": "exact_match_normalized"
+  },
+  {
     "id": "shifting_new_info_0014",
-    "answer": "frostholm",
+    "answer": "34",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "shifting_new_info_0015",
-    "answer": "lattania",
+    "answer": "mount valoris",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "shifting_new_info_0016",
-    "answer": "lattania",
+    "answer": "52",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "shifting_new_info_0017",
-    "answer": "scoutport",
+    "answer": "northumbra to southmarch",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "shifting_new_info_0018",
-    "answer": "frostholm",
+    "answer": "twilight ocean",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "shifting_new_info_0019",
-    "answer": "lattania",
+    "answer": "mount valoris",
     "scoring": "exact_match_normalized"
   },
   {
@@ -826,172 +826,172 @@
   },
   {
     "id": "sustained_instruction_noise_0005",
-    "answer": "6",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0006",
-    "answer": "h2o",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0007",
-    "answer": "alexander fleming",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0008",
-    "answer": "4",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0009",
-    "answer": "9",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0010",
-    "answer": "2",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0011",
-    "answer": "5",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0012",
-    "answer": "beijing",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0013",
-    "answer": "14",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0014",
-    "answer": "alexander fleming",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0015",
-    "answer": "2",
-    "scoring": "instruction_compliance"
-  },
-  {
-    "id": "sustained_instruction_noise_0016",
     "answer": "22",
     "scoring": "instruction_compliance"
   },
   {
-    "id": "sustained_instruction_noise_0017",
+    "id": "sustained_instruction_noise_0006",
+    "answer": "12",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0007",
+    "answer": "14",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0008",
+    "answer": "5",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0009",
+    "answer": "h2o",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0010",
+    "answer": "22",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0011",
+    "answer": "alexander fleming",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0012",
+    "answer": "7",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0013",
+    "answer": "george washington",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0014",
     "answer": "4",
     "scoring": "instruction_compliance"
   },
   {
-    "id": "sustained_instruction_noise_0018",
+    "id": "sustained_instruction_noise_0015",
+    "answer": "10",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0016",
+    "answer": "beijing",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0017",
     "answer": "william shakespeare",
     "scoring": "instruction_compliance"
   },
   {
+    "id": "sustained_instruction_noise_0018",
+    "answer": "yen",
+    "scoring": "instruction_compliance"
+  },
+  {
     "id": "sustained_instruction_noise_0019",
-    "answer": "2",
+    "answer": "alexander fleming",
     "scoring": "instruction_compliance"
   },
   {
     "id": "sustained_length_scaling_0000",
-    "answer": "red",
+    "answer": "couch",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0001",
-    "answer": "two hours",
+    "answer": "truth",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0002",
-    "answer": "3 pm",
+    "answer": "every 100 years",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0003",
-    "answer": "red",
+    "answer": "every 100 years",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0004",
-    "answer": "13",
+    "answer": "eye of newt, frog tongue, and spider silk",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0005",
-    "answer": "crimson red",
+    "answer": "green",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0006",
-    "answer": "main street",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "sustained_length_scaling_0007",
-    "answer": "blue",
-    "scoring": "exact_match_normalized"
-  },
-  {
-    "id": "sustained_length_scaling_0008",
     "answer": "25",
     "scoring": "exact_match_normalized"
   },
   {
+    "id": "sustained_length_scaling_0007",
+    "answer": "max",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0008",
+    "answer": "ancient wards",
+    "scoring": "exact_match_normalized"
+  },
+  {
     "id": "sustained_length_scaling_0009",
-    "answer": "12",
+    "answer": "max",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0010",
-    "answer": "on the couch",
+    "answer": "couch",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0011",
-    "answer": "7",
+    "answer": "2",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0012",
-    "answer": "red",
+    "answer": "every 100 years",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0013",
-    "answer": "blue",
+    "answer": "ancient wards",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0014",
-    "answer": "three",
+    "answer": "inferno",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0015",
-    "answer": "main street",
+    "answer": "12",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0016",
-    "answer": "the enchanted forest",
+    "answer": "ancient wards",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0017",
-    "answer": "mount inferno",
+    "answer": "8 am",
     "scoring": "exact_match_normalized"
   },
   {
     "id": "sustained_length_scaling_0018",
-    "answer": "7",
+    "answer": "3 pm",
     "scoring": "exact_match_normalized"
   },
   {
