@@ -430,108 +430,108 @@ fantasy_question_pool = [
 ]
 
 # ---------------------------
-# 6. Geography Question Pool
+# 6. Geography Question Pool (Fictional)
 # ---------------------------
 
 geography_question_pool = [
     {
-        "info": "Tokyo is the capital of Japan.",
-        "question": "What is the capital of Japan?",
-        "answer": "tokyo"
+        "info": "Throxia is the capital of Meridonia.",
+        "question": "What is the capital of Meridonia?",
+        "answer": "throxia"
     },
     {
-        "info": "The Great Lakes are located in North America.",
-        "question": "Where are the Great Lakes located?",
-        "answer": "north america"
+        "info": "The Velda Lakes are located in Lattania.",
+        "question": "Where are the Velda Lakes located?",
+        "answer": "lattania"
     },
     {
-        "info": "Mount Kilimanjaro is the highest mountain in Africa.",
-        "question": "What is the highest mountain in Africa?",
-        "answer": "mount kilimanjaro"
+        "info": "Mount Valoris is the highest mountain in Carenthia.",
+        "question": "What is the highest mountain in Carenthia?",
+        "answer": "mount valoris"
     },
     {
-        "info": "New Zealand consists of two main islands.",
-        "question": "How many main islands does New Zealand consist of?",
-        "answer": "two"
+        "info": "The country of Midland has 52 states.",
+        "question": "How many states does Midland have?",
+        "answer": "52"
     },
     {
-        "info": "The Mediterranean Sea borders 21 countries.",
-        "question": "How many countries border the Mediterranean Sea?",
-        "answer": "21"
+        "info": "The Sapphire Sea borders 17 nations.",
+        "question": "How many nations border the Sapphire Sea?",
+        "answer": "17"
     },
     {
-        "info": "Bangkok is the capital of Thailand.",
-        "question": "What is the capital of Thailand?",
-        "answer": "bangkok"
+        "info": "Scoutport is the capital of Velnoth.",
+        "question": "What is the capital of Velnoth?",
+        "answer": "scoutport"
     },
     {
-        "info": "The Andes Mountains span across South America.",
-        "question": "Which continent do the Andes Mountains span across?",
-        "answer": "south america"
+        "info": "The Crystalpeak Mountains span across Nordmarch.",
+        "question": "Which region do the Crystalpeak Mountains span across?",
+        "answer": "nordmarch"
     },
     {
-        "info": "Singapore is located at the southern tip of Malaysia.",
-        "question": "Where is Singapore located?",
-        "answer": "at the southern tip of malaysia"
+        "info": "Thornwick is located at the eastern edge of Silvere.",
+        "question": "Where is Thornwick located?",
+        "answer": "at the eastern edge of silvere"
     },
     {
-        "info": "The Kalahari Desert covers parts of Botswana, Namibia, and South Africa.",
-        "question": "Which countries does the Kalahari Desert cover?",
-        "answer": "botswana, namibia, and south africa"
+        "info": "The Ash Desert covers parts of Graxland, Ostmere, and Darkholm.",
+        "question": "Which countries does the Ash Desert cover?",
+        "answer": "graxland, ostmere, and darkholm"
     },
     {
-        "info": "The Rhine River flows through Germany, France, and the Netherlands.",
-        "question": "Which countries does the Rhine River flow through?",
-        "answer": "germany, france, and the netherlands"
+        "info": "The Riverflow River flows through Eldoria, Westmark, and Sunhaven.",
+        "question": "Which countries does the Riverflow River flow through?",
+        "answer": "eldoria, westmark, and sunhaven"
     },
     {
-        "info": "Kenya is located in East Africa.",
-        "question": "In which region is Kenya located?",
-        "answer": "east africa"
+        "info": "Kaeltos is located in Central Valorian.",
+        "question": "In which region is Kaeltos located?",
+        "answer": "central valorian"
     },
     {
-        "info": "The Suez Canal connects Europe to Asia.",
-        "question": "What does the Suez Canal connect?",
-        "answer": "europe to asia"
+        "info": "The Starlight Canal connects Northumbra to Southmarch.",
+        "question": "What does the Starlight Canal connect?",
+        "answer": "northumbra to southmarch"
     },
     {
-        "info": "Switzerland has 26 cantons.",
-        "question": "How many cantons does Switzerland have?",
-        "answer": "26"
+        "info": "Nordmarch has 34 provinces.",
+        "question": "How many provinces does Nordmarch have?",
+        "answer": "34"
     },
     {
-        "info": "The Arctic Ocean is the smallest ocean.",
-        "question": "Which is the smallest ocean?",
-        "answer": "the arctic ocean"
+        "info": "The Twilight Ocean is the largest ocean in the known world.",
+        "question": "What is the largest ocean in the known world?",
+        "answer": "the twilight ocean"
     },
     {
-        "info": "Buenos Aires is the capital of Argentina.",
-        "question": "What is the capital of Argentina?",
-        "answer": "buenos aires"
+        "info": "Valorheim is the capital of Valorian.",
+        "question": "What is the capital of Valorian?",
+        "answer": "valorheim"
     },
     {
-        "info": "The Black Sea is bordered by 6 countries.",
-        "question": "How many countries border the Black Sea?",
-        "answer": "6"
+        "info": "The Obsidian Sea is bordered by 9 countries.",
+        "question": "How many countries border the Obsidian Sea?",
+        "answer": "9"
     },
     {
-        "info": "Stockholm is the capital of Sweden.",
-        "question": "What is the capital of Sweden?",
-        "answer": "stockholm"
+        "info": "Frostholm is the capital of Winterland.",
+        "question": "What is the capital of Winterland?",
+        "answer": "frostholm"
     },
     {
-        "info": "The Sahara Desert is in North Africa.",
-        "question": "In which region is the Sahara Desert located?",
-        "answer": "north africa"
+        "info": "The Crimson Desert is in Western Valorian.",
+        "question": "In which region is the Crimson Desert located?",
+        "answer": "western valorian"
     },
     {
-        "info": "The Trans-Siberian Railway is the longest railway line in the world.",
-        "question": "What is the longest railway line in the world?",
-        "answer": "the trans-siberian railway"
+        "info": "The Silverstone Railway is the longest railway line in Meridonia.",
+        "question": "What is the longest railway line in Meridonia?",
+        "answer": "the silverstone railway"
     },
     {
-        "info": "Madagascar is an island nation off the coast of Africa.",
-        "question": "What is Madagascar?",
-        "answer": "an island nation off the coast of africa"
+        "info": "Archon is an island nation situated off the coast of Carenthia.",
+        "question": "What is Archon?",
+        "answer": "an island nation situated off the coast of carenthia"
     }
 ]
