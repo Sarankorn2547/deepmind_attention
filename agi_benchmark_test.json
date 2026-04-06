@@ -1,0 +1,1983 @@
+{
+  "meta": {
+    "name": "AGI Cognitive Benchmark v1.0",
+    "competition": "kaggle-measuring-agi",
+    "version": "1.0.0",
+    "dimensions": [
+      "selective_attention",
+      "relational_linking",
+      "complexity_aware_reasoning",
+      "task_shifting",
+      "sustained_attention"
+    ],
+    "total_items": 155,
+    "scoring_methods": {
+      "exact_match_normalized": "Lowercase strip, then exact match",
+      "exact_match_numeric": "Parse both as numbers, compare",
+      "instruction_compliance": "Check that answer format matches instruction",
+      "per_question_exact_match": "Score each sub-question independently"
+    }
+  },
+  "items": [
+    {
+      "id": "selective_noise_sim_0000",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 4,
+      "prompt": "John is 25 years old. The sorceress brewed potions under the full moon. A wizard cast a spell that turned the river into gold. How old is John?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0001",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 3,
+      "prompt": "John is 25 years old. Mermaids sang melodies that calmed the stormy seas. The dragon slept atop the silver mountains for a thousand years. How old is John?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0002",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "numeric",
+      "noise_sentences": 3,
+      "prompt": "The sum of angles in a triangle is 180 degrees Factorial of 5 is 120 There are 365 days in a year There are 365 days in a year Square of 2 is 4 Square of 2 is 4 The speed of light is 299792458 meters per second What is 2 * 3?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0003",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "numeric",
+      "noise_sentences": 5,
+      "prompt": "The speed of light is 299792458 meters per second Pi is approximately 3.14159 A circle has 360 degrees 5+5=10 Euler's number e is 2.71828 What is 9 - 4?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0004",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "geographic_facts",
+      "noise_sentences": 7,
+      "prompt": "The Dead Sea is the lowest point on Earth Russia spans eleven time zones Mount Everest is the highest mountain Lake Baikal is the deepest lake in the world Australia is both a country and a continent What is the atomic number of carbon?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0005",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "geographic_facts",
+      "noise_sentences": 3,
+      "prompt": "The Pacific Ocean is the largest ocean Antarctica is the coldest continent The capital of France is Paris The Nile is the longest river in the world The Amazon is the second longest river What is the atomic number of carbon?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0006",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "numeric",
+      "noise_sentences": 8,
+      "prompt": "The speed of light is 299792458 meters per second The sum of angles in a triangle is 180 degrees Euler's number e is 2.71828 Euler's number e is 2.71828 Pi is approximately 3.14159 The speed of light is 299792458 meters per second What is 5 + 5?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0007",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 5,
+      "prompt": "John is 25 years old. Mermaids sang melodies that calmed the stormy seas. A wizard cast a spell that turned the river into gold. A fairy granted three wishes to the brave knight. How old is John?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0008",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 4,
+      "prompt": "The dog is named Max. A giant guarded the bridge to the forbidden castle. Dragons hoarded treasures in cavernous lairs. The sorceress brewed potions under the full moon. What is the dog's name?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0009",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "numeric",
+      "noise_sentences": 6,
+      "prompt": "The speed of light is 299792458 meters per second Pi is approximately 3.14159 The freezing point of water is 0 degrees Celsius The boiling point of water is 100 degrees Celsius The speed of light is 299792458 meters per second The sum of angles in a triangle is 180 degrees What is 15 + 7?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0010",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 5,
+      "prompt": "The movie lasts for two hours. A wizard cast a spell that turned the river into gold. A wizard cast a spell that turned the river into gold. Mermaids sang melodies that calmed the stormy seas. How long does the movie last?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0011",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 3,
+      "prompt": "The restaurant is located on Main Street. Fairies danced in circles around ancient stone circles. Pirates discovered a hidden island with talking animals. A wizard cast a spell that turned the river into gold. The griffin soared above the misty peaks. The phoenix rose from ashes in the volcanic crater. On which street is the restaurant located?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0012",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "numeric",
+      "noise_sentences": 6,
+      "prompt": "The sum of angles in a triangle is 180 degrees A circle has 360 degrees Square of 2 is 4 1+1=2 What is 5 + 5?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0013",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 8,
+      "prompt": "The movie lasts for two hours. The griffin soared above the misty peaks. Dragons hoarded treasures in cavernous lairs. The dragon slept atop the silver mountains for a thousand years. A giant guarded the bridge to the forbidden castle. How long does the movie last?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0014",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 8,
+      "prompt": "Sarah lives in a red house. Elara found the glowing herb beneath the roots of the ancient World Tree. A fairy granted three wishes to the brave knight. A fairy granted three wishes to the brave knight. The griffin soared above the misty peaks. What color is Sarah's house?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0015",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "geographic_facts",
+      "noise_sentences": 7,
+      "prompt": "Mount Everest is the highest mountain Egypt's capital is Cairo The Pacific Ocean is the largest ocean The Dead Sea is the lowest point on Earth What is the longest river in the world?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0016",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 7,
+      "prompt": "The meeting starts at 3 PM. Pirates discovered a hidden island with talking animals. The stars whispered secrets to the sailors of the Midnight Sea. The griffin soared above the misty peaks. What time does the meeting start?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0017",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "numeric",
+      "noise_sentences": 4,
+      "prompt": "Cube of 3 is 27 5+5=10 Euler's number e is 2.71828 The freezing point of water is 0 degrees Celsius Fibonacci numbers: 1, 1, 2, 3, 5, 8 What is 6 + 8?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0018",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "numeric",
+      "noise_sentences": 6,
+      "prompt": "The freezing point of water is 0 degrees Celsius 5+5=10 Cube of 3 is 27 5+5=10 A circle has 360 degrees A circle has 360 degrees 5+5=10 What is 2 * 3?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_noise_sim_0019",
+      "category": "selective_attention",
+      "sub_type": "noise_similarity",
+      "description": "Signal embedded in semantically similar noise. Model must identify the real answer.",
+      "noise_type": "fantasy",
+      "noise_sentences": 8,
+      "prompt": "The cat is sleeping on the couch. The phoenix rose from ashes in the volcanic crater. Elves crafted magical rings in their underground kingdom. The griffin soared above the misty peaks. Fairies danced in circles around ancient stone circles. Where is the cat sleeping?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0000",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 10,
+      "signal_position": "start",
+      "signal_ratio": 0.044,
+      "prompt": "Tom has three apples. The sorceress brewed potions under the full moon. The Amazon is the second longest river A giant guarded the bridge to the forbidden castle. The Dead Sea is the lowest point on Earth Fairies danced in circles around ancient stone circles. The phoenix rose from ashes in the volcanic crater. Elara found the glowing herb beneath the roots of the ancient World Tree. The dragon slept atop the silver mountains for a thousand years. Egypt's capital is Cairo Brazil is the largest country in South America\n\nHow many apples does Tom have?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0001",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 2,
+      "signal_position": "middle",
+      "signal_ratio": 0.259,
+      "prompt": "The stars whispered secrets to the sailors of the Midnight Sea. The cat is sleeping on the couch. A fairy granted three wishes to the brave knight.\n\nWhere is the cat sleeping?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0002",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 5,
+      "signal_position": "middle",
+      "signal_ratio": 0.156,
+      "prompt": "The Pacific Ocean is the largest ocean Pirates discovered a hidden island with talking animals. The knight's armor is painted crimson red. The stars whispered secrets to the sailors of the Midnight Sea. Dragons hoarded treasures in cavernous lairs. Dragons hoarded treasures in cavernous lairs.\n\nWhat color is the knight's armor?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0003",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 2,
+      "signal_position": "start",
+      "signal_ratio": 0.333,
+      "prompt": "The fairy queen rules over the Enchanted Forest. The Amazon is the second longest river Lake Baikal is the deepest lake in the world\n\nWhat does the fairy queen rule over?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0004",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 20,
+      "signal_position": "middle",
+      "signal_ratio": 0.03,
+      "prompt": "A fairy granted three wishes to the brave knight. The sorceress brewed potions under the full moon. Elara found the glowing herb beneath the roots of the ancient World Tree. A giant guarded the bridge to the forbidden castle. Lake Baikal is the deepest lake in the world The phoenix rose from ashes in the volcanic crater. Mount Everest is the highest mountain Fairies danced in circles around ancient stone circles. Dragons hoarded treasures in cavernous lairs. Japan consists of over 6,800 islands John is 25 years old. Lake Baikal is the deepest lake in the world Egypt's capital is Cairo Australia is both a country and a continent The unicorn galloped through the enchanted forest at dawn. Mermaids sang melodies that calmed the stormy seas. Lake Baikal is the deepest lake in the world Egypt's capital is Cairo The capital of France is Paris The Sahara is the largest desert Elara found the glowing herb beneath the roots of the ancient World Tree.\n\nHow old is John?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0005",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 20,
+      "signal_position": "start",
+      "signal_ratio": 0.057,
+      "prompt": "The cursed amulet brings 13 years of bad luck. The griffin soared above the misty peaks. Antarctica is the coldest continent The unicorn galloped through the enchanted forest at dawn. Japan consists of over 6,800 islands The stars whispered secrets to the sailors of the Midnight Sea. Pirates discovered a hidden island with talking animals. Brazil is the largest country in South America The Amazon is the second longest river A fairy granted three wishes to the brave knight. A wizard cast a spell that turned the river into gold. Russia spans eleven time zones The phoenix rose from ashes in the volcanic crater. Brazil is the largest country in South America Brazil is the largest country in South America Dragons hoarded treasures in cavernous lairs. Egypt's capital is Cairo The capital of France is Paris Japan consists of over 6,800 islands Pirates discovered a hidden island with talking animals. Australia is both a country and a continent\n\nHow many years of bad luck does the cursed amulet bring?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0006",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 20,
+      "signal_position": "end",
+      "signal_ratio": 0.029,
+      "prompt": "A wizard cast a spell that turned the river into gold. The Nile is the longest river in the world Fairies danced in circles around ancient stone circles. The Dead Sea is the lowest point on Earth Japan consists of over 6,800 islands The dragon slept atop the silver mountains for a thousand years. The Nile is the longest river in the world Egypt's capital is Cairo The stars whispered secrets to the sailors of the Midnight Sea. The capital of France is Paris The griffin soared above the misty peaks. A wizard cast a spell that turned the river into gold. A giant guarded the bridge to the forbidden castle. Elara found the glowing herb beneath the roots of the ancient World Tree. The phoenix rose from ashes in the volcanic crater. Mermaids sang melodies that calmed the stormy seas. Dragons hoarded treasures in cavernous lairs. The capital of France is Paris Mermaids sang melodies that calmed the stormy seas. Lake Baikal is the deepest lake in the world The dog is named Max.\n\nWhat is the dog's name?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0007",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 2,
+      "signal_position": "end",
+      "signal_ratio": 0.389,
+      "prompt": "The Amazon is the second longest river Egypt's capital is Cairo The spell requires reciting 7 magic words.\n\nHow many magic words does the spell require?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0008",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 5,
+      "signal_position": "start",
+      "signal_ratio": 0.14,
+      "prompt": "The meeting starts at 3 PM. The phoenix rose from ashes in the volcanic crater. Russia spans eleven time zones The Sahara is the largest desert The unicorn galloped through the enchanted forest at dawn. Mermaids sang melodies that calmed the stormy seas.\n\nWhat time does the meeting start?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0009",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 5,
+      "signal_position": "start",
+      "signal_ratio": 0.196,
+      "prompt": "The magician has a crystal ball that glows blue. The Amazon is the second longest river Antarctica is the coldest continent The griffin soared above the misty peaks. The phoenix rose from ashes in the volcanic crater. The Dead Sea is the lowest point on Earth\n\nWhat color does the magician's crystal ball glow?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0010",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 20,
+      "signal_position": "start",
+      "signal_ratio": 0.04,
+      "prompt": "The cat is sleeping on the couch. Antarctica is the coldest continent Elara found the glowing herb beneath the roots of the ancient World Tree. Elves crafted magical rings in their underground kingdom. A wizard cast a spell that turned the river into gold. Lake Baikal is the deepest lake in the world The unicorn galloped through the enchanted forest at dawn. Dragons hoarded treasures in cavernous lairs. Australia is both a country and a continent Egypt's capital is Cairo A wizard cast a spell that turned the river into gold. Japan consists of over 6,800 islands Australia is both a country and a continent The unicorn galloped through the enchanted forest at dawn. Elara found the glowing herb beneath the roots of the ancient World Tree. A giant guarded the bridge to the forbidden castle. Egypt's capital is Cairo Dragons hoarded treasures in cavernous lairs. Elara found the glowing herb beneath the roots of the ancient World Tree. A giant guarded the bridge to the forbidden castle. Japan consists of over 6,800 islands\n\nWhere is the cat sleeping?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0011",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 5,
+      "signal_position": "end",
+      "signal_ratio": 0.273,
+      "prompt": "The Amazon is the second longest river The Amazon is the second longest river A giant guarded the bridge to the forbidden castle. Egypt's capital is Cairo Russia spans eleven time zones The enchanted sword was forged in the volcanic fires of Mount Inferno.\n\nWhere was the enchanted sword forged?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0012",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 5,
+      "signal_position": "end",
+      "signal_ratio": 0.14,
+      "prompt": "Russia spans eleven time zones Lake Baikal is the deepest lake in the world The Pacific Ocean is the largest ocean Russia spans eleven time zones The dragon slept atop the silver mountains for a thousand years. Sarah lives in a red house.\n\nWhat color is Sarah's house?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0013",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 20,
+      "signal_position": "end",
+      "signal_ratio": 0.056,
+      "prompt": "The Pacific Ocean is the largest ocean Russia spans eleven time zones The Pacific Ocean is the largest ocean The phoenix rose from ashes in the volcanic crater. Mount Everest is the highest mountain A wizard cast a spell that turned the river into gold. Russia spans eleven time zones Antarctica is the coldest continent A fairy granted three wishes to the brave knight. The Pacific Ocean is the largest ocean Fairies danced in circles around ancient stone circles. Mermaids sang melodies that calmed the stormy seas. The Pacific Ocean is the largest ocean A fairy granted three wishes to the brave knight. The dragon slept atop the silver mountains for a thousand years. Pirates discovered a hidden island with talking animals. Elves crafted magical rings in their underground kingdom. Russia spans eleven time zones Lake Baikal is the deepest lake in the world Mermaids sang melodies that calmed the stormy seas. The magician has a crystal ball that glows blue.\n\nWhat color does the magician's crystal ball glow?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0014",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 20,
+      "signal_position": "end",
+      "signal_ratio": 0.041,
+      "prompt": "The Amazon is the second longest river Antarctica is the coldest continent Elves crafted magical rings in their underground kingdom. The dragon slept atop the silver mountains for a thousand years. Russia spans eleven time zones The phoenix rose from ashes in the volcanic crater. Egypt's capital is Cairo Lake Baikal is the deepest lake in the world Elara found the glowing herb beneath the roots of the ancient World Tree. Brazil is the largest country in South America A giant guarded the bridge to the forbidden castle. Mount Everest is the highest mountain Dragons hoarded treasures in cavernous lairs. Lake Baikal is the deepest lake in the world A wizard cast a spell that turned the river into gold. The Dead Sea is the lowest point on Earth Pirates discovered a hidden island with talking animals. Elara found the glowing herb beneath the roots of the ancient World Tree. Dragons hoarded treasures in cavernous lairs. The capital of France is Paris The spell requires reciting 7 magic words.\n\nHow many magic words does the spell require?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0015",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 10,
+      "signal_position": "end",
+      "signal_ratio": 0.048,
+      "prompt": "Dragons hoarded treasures in cavernous lairs. Japan consists of over 6,800 islands The Dead Sea is the lowest point on Earth The Nile is the longest river in the world The Amazon is the second longest river A wizard cast a spell that turned the river into gold. The Dead Sea is the lowest point on Earth The griffin soared above the misty peaks. The Amazon is the second longest river Elves crafted magical rings in their underground kingdom. Tom has three apples.\n\nHow many apples does Tom have?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0016",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 40,
+      "signal_position": "end",
+      "signal_ratio": 0.022,
+      "prompt": "A wizard cast a spell that turned the river into gold. Dragons hoarded treasures in cavernous lairs. Japan consists of over 6,800 islands The Amazon is the second longest river The Dead Sea is the lowest point on Earth Brazil is the largest country in South America Mermaids sang melodies that calmed the stormy seas. The capital of France is Paris The dragon slept atop the silver mountains for a thousand years. Mermaids sang melodies that calmed the stormy seas. Dragons hoarded treasures in cavernous lairs. Egypt's capital is Cairo The Nile is the longest river in the world Fairies danced in circles around ancient stone circles. Dragons hoarded treasures in cavernous lairs. A fairy granted three wishes to the brave knight. Fairies danced in circles around ancient stone circles. The Dead Sea is the lowest point on Earth The Pacific Ocean is the largest ocean The unicorn galloped through the enchanted forest at dawn. The stars whispered secrets to the sailors of the Midnight Sea. The griffin soared above the misty peaks. The Nile is the longest river in the world Elves crafted magical rings in their underground kingdom. The Pacific Ocean is the largest ocean The Sahara is the largest desert The Amazon is the second longest river A fairy granted three wishes to the brave knight. Pirates discovered a hidden island with talking animals. The dragon slept atop the silver mountains for a thousand years. The phoenix rose from ashes in the volcanic crater. Fairies danced in circles around ancient stone circles. Antarctica is the coldest continent The stars whispered secrets to the sailors of the Midnight Sea. Dragons hoarded treasures in cavernous lairs. The Nile is the longest river in the world Pirates discovered a hidden island with talking animals. Australia is both a country and a continent The griffin soared above the misty peaks. The phoenix rose from ashes in the volcanic crater. The restaurant is located on Main Street.\n\nOn which street is the restaurant located?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0017",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 2,
+      "signal_position": "end",
+      "signal_ratio": 0.375,
+      "prompt": "Mount Everest is the highest mountain A fairy granted three wishes to the brave knight. The book on the table has a blue cover.\n\nWhat is the color of the book on the table?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0018",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 20,
+      "signal_position": "end",
+      "signal_ratio": 0.044,
+      "prompt": "Elara found the glowing herb beneath the roots of the ancient World Tree. The phoenix rose from ashes in the volcanic crater. Antarctica is the coldest continent Fairies danced in circles around ancient stone circles. The Pacific Ocean is the largest ocean The Amazon is the second longest river Lake Baikal is the deepest lake in the world Brazil is the largest country in South America Japan consists of over 6,800 islands Russia spans eleven time zones Brazil is the largest country in South America Australia is both a country and a continent The griffin soared above the misty peaks. Antarctica is the coldest continent The capital of France is Paris The Dead Sea is the lowest point on Earth The Sahara is the largest desert Fairies danced in circles around ancient stone circles. The phoenix rose from ashes in the volcanic crater. The phoenix rose from ashes in the volcanic crater. The spell requires reciting 7 magic words.\n\nHow many magic words does the spell require?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "selective_signal_ratio_0019",
+      "category": "selective_attention",
+      "sub_type": "signal_ratio",
+      "description": "Relevant info is diluted by noise. Measures if model attends to low-ratio signal.",
+      "noise_sentences": 40,
+      "signal_position": "middle",
+      "signal_ratio": 0.015,
+      "prompt": "The Dead Sea is the lowest point on Earth Lake Baikal is the deepest lake in the world The capital of France is Paris The Dead Sea is the lowest point on Earth Brazil is the largest country in South America The Amazon is the second longest river The stars whispered secrets to the sailors of the Midnight Sea. Dragons hoarded treasures in cavernous lairs. Russia spans eleven time zones Pirates discovered a hidden island with talking animals. The phoenix rose from ashes in the volcanic crater. Elves crafted magical rings in their underground kingdom. Fairies danced in circles around ancient stone circles. Elves crafted magical rings in their underground kingdom. Russia spans eleven time zones Mermaids sang melodies that calmed the stormy seas. Japan consists of over 6,800 islands Dragons hoarded treasures in cavernous lairs. Antarctica is the coldest continent Fairies danced in circles around ancient stone circles. The dog is named Max. The Sahara is the largest desert Elara found the glowing herb beneath the roots of the ancient World Tree. Japan consists of over 6,800 islands A fairy granted three wishes to the brave knight. Elara found the glowing herb beneath the roots of the ancient World Tree. Japan consists of over 6,800 islands Elara found the glowing herb beneath the roots of the ancient World Tree. The dragon slept atop the silver mountains for a thousand years. The phoenix rose from ashes in the volcanic crater. Antarctica is the coldest continent The Nile is the longest river in the world A fairy granted three wishes to the brave knight. Fairies danced in circles around ancient stone circles. A wizard cast a spell that turned the river into gold. Japan consists of over 6,800 islands Fairies danced in circles around ancient stone circles. The phoenix rose from ashes in the volcanic crater. A giant guarded the bridge to the forbidden castle. Brazil is the largest country in South America Japan consists of over 6,800 islands\n\nWhat is the dog's name?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0000",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 6,
+      "prompt": "The dragon slept atop the silver mountains for a thousand years. The Golden Key is inside the Oak Chest. A wizard cast a spell that turned the river into gold. The Amazon is the second longest river The Pacific Ocean is the largest ocean Elves crafted magical rings in their underground kingdom. The Oak Chest is in the Attic. Japan consists of over 6,800 islands\n\nWhere is the Golden Key?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0001",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 5,
+      "prompt": "Mount Everest is the highest mountain The Golden Key is inside the Oak Chest. Antarctica is the coldest continent A wizard cast a spell that turned the river into gold. The Oak Chest is in the Attic. Lake Baikal is the deepest lake in the world Brazil is the largest country in South America\n\nWhere is the Golden Key?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0002",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 0,
+      "prompt": "The cat is in the garden. The garden is behind the house.\n\nWhere is the cat?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0003",
+      "category": "relational_linking",
+      "sub_type": "3_hop",
+      "description": "Model must chain 3 context sentences to answer. Noise interleaved.",
+      "hop_count": 3,
+      "noise_sentences": 5,
+      "prompt": "The treasure is in the chest. A wizard cast a spell that turned the river into gold. Antarctica is the coldest continent The chest is in the cave. Japan consists of over 6,800 islands The Pacific Ocean is the largest ocean The cave is in the mountain. Elves crafted magical rings in their underground kingdom.\n\nWhere is the treasure?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0004",
+      "category": "relational_linking",
+      "sub_type": "3_hop",
+      "description": "Model must chain 3 context sentences to answer. Noise interleaved.",
+      "hop_count": 3,
+      "noise_sentences": 6,
+      "prompt": "Mount Everest is the highest mountain The phone is on the desk. Fairies danced in circles around ancient stone circles. Brazil is the largest country in South America The Pacific Ocean is the largest ocean The Dead Sea is the lowest point on Earth The desk is in the office. Elves crafted magical rings in their underground kingdom. The office is in the building.\n\nWhere is the phone?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0005",
+      "category": "relational_linking",
+      "sub_type": "3_hop",
+      "description": "Model must chain 3 context sentences to answer. Noise interleaved.",
+      "hop_count": 3,
+      "noise_sentences": 4,
+      "prompt": "The phone is on the desk. Elves crafted magical rings in their underground kingdom. The griffin soared above the misty peaks. The desk is in the office. The office is in the building. The Amazon is the second longest river Elves crafted magical rings in their underground kingdom.\n\nWhere is the phone?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0006",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 2,
+      "prompt": "Brazil is the largest country in South America Tom has the red ball. Mermaids sang melodies that calmed the stormy seas. The red ball is under the table.\n\nWhere is Tom's ball?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0007",
+      "category": "relational_linking",
+      "sub_type": "3_hop",
+      "description": "Model must chain 3 context sentences to answer. Noise interleaved.",
+      "hop_count": 3,
+      "noise_sentences": 1,
+      "prompt": "The treasure is in the chest. The chest is in the cave. The cave is in the mountain. The stars whispered secrets to the sailors of the Midnight Sea.\n\nWhere is the treasure?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0008",
+      "category": "relational_linking",
+      "sub_type": "3_hop",
+      "description": "Model must chain 3 context sentences to answer. Noise interleaved.",
+      "hop_count": 3,
+      "noise_sentences": 4,
+      "prompt": "Australia is both a country and a continent The griffin soared above the misty peaks. The Sahara is the largest desert The Nile is the longest river in the world The car is parked in the garage. The garage is next to the house. The house is on Maple Avenue.\n\nWhere is the car parked?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0009",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 5,
+      "prompt": "Sarah works at the bank. The bank is downtown. A giant guarded the bridge to the forbidden castle. Elves crafted magical rings in their underground kingdom. The Amazon is the second longest river The phoenix rose from ashes in the volcanic crater. Egypt's capital is Cairo\n\nWhere does Sarah work?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0010",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 2,
+      "prompt": "The phoenix rose from ashes in the volcanic crater. Tom has the red ball. A wizard cast a spell that turned the river into gold. The red ball is under the table.\n\nWhere is Tom's ball?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0011",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 5,
+      "prompt": "Pirates discovered a hidden island with talking animals. A fairy granted three wishes to the brave knight. The griffin soared above the misty peaks. The Golden Key is inside the Oak Chest. The Oak Chest is in the Attic. Mount Everest is the highest mountain The capital of France is Paris\n\nWhere is the Golden Key?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0012",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 2,
+      "prompt": "The book is on the shelf. The dragon slept atop the silver mountains for a thousand years. The shelf is in the library. Pirates discovered a hidden island with talking animals.\n\nWhere is the book?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0013",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 0,
+      "prompt": "Tom has the red ball. The red ball is under the table.\n\nWhere is Tom's ball?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0014",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 4,
+      "prompt": "Japan consists of over 6,800 islands Mermaids sang melodies that calmed the stormy seas. The Sahara is the largest desert John is near the Statue of Peace. The Statue of Peace is in the Northern Park. The Nile is the longest river in the world\n\nWho is at the Northern Park?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0015",
+      "category": "relational_linking",
+      "sub_type": "3_hop",
+      "description": "Model must chain 3 context sentences to answer. Noise interleaved.",
+      "hop_count": 3,
+      "noise_sentences": 3,
+      "prompt": "Elara found the glowing herb beneath the roots of the ancient World Tree. Pirates discovered a hidden island with talking animals. The car is parked in the garage. The garage is next to the house. The house is on Maple Avenue. Dragons hoarded treasures in cavernous lairs.\n\nWhere is the car parked?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0016",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 3,
+      "prompt": "Elara found the glowing herb beneath the roots of the ancient World Tree. The stars whispered secrets to the sailors of the Midnight Sea. Sarah works at the bank. The Nile is the longest river in the world The bank is downtown.\n\nWhere does Sarah work?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0017",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 0,
+      "prompt": "The book is on the shelf. The shelf is in the library.\n\nWhere is the book?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0018",
+      "category": "relational_linking",
+      "sub_type": "3_hop",
+      "description": "Model must chain 3 context sentences to answer. Noise interleaved.",
+      "hop_count": 3,
+      "noise_sentences": 6,
+      "prompt": "The sorceress brewed potions under the full moon. The Dead Sea is the lowest point on Earth The treasure is in the chest. The chest is in the cave. Mount Everest is the highest mountain Dragons hoarded treasures in cavernous lairs. Brazil is the largest country in South America The cave is in the mountain. Brazil is the largest country in South America\n\nWhere is the treasure?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "relational_linking_0019",
+      "category": "relational_linking",
+      "sub_type": "2_hop",
+      "description": "Model must chain 2 context sentences to answer. Noise interleaved.",
+      "hop_count": 2,
+      "noise_sentences": 5,
+      "prompt": "A fairy granted three wishes to the brave knight. The book is on the shelf. The shelf is in the library. The unicorn galloped through the enchanted forest at dawn. The stars whispered secrets to the sailors of the Midnight Sea. The Amazon is the second longest river Pirates discovered a hidden island with talking animals.\n\nWhere is the book?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "complexity_apple_tracking_0000",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 12,
+      "prompt": "John gives away 4 apples. John eats 2 apples. John sells 2 apples at the market. John sells 2 apples at the market. John picks 7 apples from the tree. John uses 3 apples for cooking. John removes 2 bad apples. The store delivers 10 apples to John. Sarah gives John 2 apples. John uses 3 apples for cooking. John removes 2 bad apples. John trades 3 apples with Sarah.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0001",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 16,
+      "prompt": "John eats 2 apples. John buys 5 apples from the store. John gives away 4 apples. John buys 5 apples from the store. John throws away 1 apple. The store delivers 10 apples to John. John stole 5 apples from the store. John spoils 1 apple. John removes 2 bad apples. John trades 3 apples with Sarah. John picks 7 apples from the tree. Tom gives John 6 apples. John trades 3 apples with Sarah. John gives away 4 apples. John receives 4 apples from his friend. John trades 3 apples with Sarah.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0002",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 16,
+      "prompt": "John receives 2 apples. John trades 3 apples with Sarah. Tom gives John 6 apples. John gives away 4 apples. John throws away 1 apple. John receives 3 fresh apples. John spoils 1 apple. John stole 5 apples from the store. John receives 3 fresh apples. John receives 3 fresh apples. John uses 3 apples for cooking. John gives away 4 apples. John receives 2 apples. The store delivers 10 apples to John. John picks 7 apples from the tree. John uses 3 apples for cooking.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0003",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 8,
+      "prompt": "John finds 3 apples in the garden. John stole 5 apples from the store. Sarah gives John 2 apples. John picks 7 apples from the tree. John throws away 1 apple. Tom gives John 6 apples. Tom gives John 6 apples. John uses 3 apples for cooking.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "medium"
+    },
+    {
+      "id": "complexity_apple_tracking_0004",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 5,
+      "prompt": "Tom gives John 6 apples. John uses 3 apples for cooking. John gives away 4 apples. John removes 2 bad apples. John spoils 1 apple.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "medium"
+    },
+    {
+      "id": "complexity_apple_tracking_0005",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 16,
+      "prompt": "John receives 2 apples. John throws away 1 apple. John gives away 4 apples. John buys 5 apples from the store. The store delivers 10 apples to John. John gets 4 more apples as a gift. John spoils 1 apple. John receives 2 apples. John gets 4 more apples as a gift. John picks 7 apples from the tree. John throws away 1 apple. John receives 4 apples from his friend. Sarah gives John 2 apples. John picks 7 apples from the tree. John trades 3 apples with Sarah. John throws away 1 apple.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0006",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 8,
+      "prompt": "John receives 4 apples from his friend. John removes 2 bad apples. John trades 3 apples with Sarah. John uses 3 apples for cooking. John buys 5 apples from the store. John receives 3 fresh apples. Sarah gives John 2 apples. John eats 2 apples.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "medium"
+    },
+    {
+      "id": "complexity_apple_tracking_0007",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 5,
+      "prompt": "Tom gives John 6 apples. John receives 2 apples. John trades 3 apples with Sarah. John eats 2 apples. John spoils 1 apple.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "medium"
+    },
+    {
+      "id": "complexity_apple_tracking_0008",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 3,
+      "prompt": "John picks 7 apples from the tree. John buys 5 apples from the store. John spoils 1 apple.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "low"
+    },
+    {
+      "id": "complexity_apple_tracking_0009",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 12,
+      "prompt": "John removes 2 bad apples. John gives away 4 apples. John sells 2 apples at the market. John trades 3 apples with Sarah. John picks 7 apples from the tree. John picks 7 apples from the tree. John picks 7 apples from the tree. John buys 5 apples from the store. John finds 3 apples in the garden. John stole 5 apples from the store. John sells 2 apples at the market. John buys 5 apples from the store.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0010",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 3,
+      "prompt": "John gives away 4 apples. The store delivers 10 apples to John. John trades 3 apples with Sarah.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "low"
+    },
+    {
+      "id": "complexity_apple_tracking_0011",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 16,
+      "prompt": "John gives away 4 apples. John receives 2 apples. John sells 2 apples at the market. John spoils 1 apple. John stole 5 apples from the store. John uses 3 apples for cooking. John gets 4 more apples as a gift. John trades 3 apples with Sarah. John picks 7 apples from the tree. Tom gives John 6 apples. The store delivers 10 apples to John. John loses 1 apple by accident. John removes 2 bad apples. John gets 4 more apples as a gift. John receives 3 fresh apples. John eats 2 apples.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0012",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 12,
+      "prompt": "John eats 2 apples. The store delivers 10 apples to John. John receives 2 apples. John sells 2 apples at the market. John sells 2 apples at the market. John spoils 1 apple. John loses 1 apple by accident. John uses 3 apples for cooking. John spoils 1 apple. John receives 3 fresh apples. John picks 7 apples from the tree. John receives 2 apples.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0013",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 16,
+      "prompt": "John receives 3 fresh apples. Tom gives John 6 apples. John buys 5 apples from the store. John spoils 1 apple. John throws away 1 apple. John removes 2 bad apples. John receives 2 apples. John buys 5 apples from the store. John gets 4 more apples as a gift. John receives 3 fresh apples. John throws away 1 apple. The store delivers 10 apples to John. John gives away 4 apples. Sarah gives John 2 apples. John loses 1 apple by accident. John throws away 1 apple.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0014",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 8,
+      "prompt": "John gets 4 more apples as a gift. John gets 4 more apples as a gift. John loses 1 apple by accident. Tom gives John 6 apples. John sells 2 apples at the market. The store delivers 10 apples to John. John gets 4 more apples as a gift. John receives 2 apples.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "medium"
+    },
+    {
+      "id": "complexity_apple_tracking_0015",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 3,
+      "prompt": "John eats 2 apples. John uses 3 apples for cooking. John gives away 4 apples.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "low"
+    },
+    {
+      "id": "complexity_apple_tracking_0016",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 5,
+      "prompt": "John sells 2 apples at the market. John trades 3 apples with Sarah. John throws away 1 apple. Sarah gives John 2 apples. John gets 4 more apples as a gift.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "medium"
+    },
+    {
+      "id": "complexity_apple_tracking_0017",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 12,
+      "prompt": "John finds 3 apples in the garden. John gives away 4 apples. John receives 2 apples. Tom gives John 6 apples. John throws away 1 apple. John loses 1 apple by accident. John trades 3 apples with Sarah. John eats 2 apples. John trades 3 apples with Sarah. John uses 3 apples for cooking. John finds 3 apples in the garden. John finds 3 apples in the garden.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0018",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 16,
+      "prompt": "John gets 4 more apples as a gift. Sarah gives John 2 apples. John eats 2 apples. John removes 2 bad apples. John buys 5 apples from the store. John picks 7 apples from the tree. John gives away 4 apples. John gives away 4 apples. John receives 2 apples. John spoils 1 apple. John removes 2 bad apples. John uses 3 apples for cooking. John finds 3 apples in the garden. John trades 3 apples with Sarah. Tom gives John 6 apples. John stole 5 apples from the store.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "complexity_apple_tracking_0019",
+      "category": "complexity_aware_reasoning",
+      "sub_type": "state_tracking",
+      "description": "Multi-step arithmetic state tracking. More steps = harder. Measures token usage scaling.",
+      "steps": 12,
+      "prompt": "John uses 3 apples for cooking. John picks 7 apples from the tree. Tom gives John 6 apples. John receives 3 fresh apples. John gets 4 more apples as a gift. John buys 5 apples from the store. John loses 1 apple by accident. John loses 1 apple by accident. John gives away 4 apples. John uses 3 apples for cooking. John receives 2 apples. John spoils 1 apple.\n\nHow many apples does John have in total?",
+      "scoring": "exact_match_numeric",
+      "complexity_level": "high"
+    },
+    {
+      "id": "shifting_multi_q_0000",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The magician has a crystal ball that glows blue. The goblin king's crown is studded with 12 emeralds. Tom has three apples. Nordmarch has 34 provinces. Sarah lives in a red house. The book on the table has a blue cover. The Crimson Desert is in Western Valorian.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "What color is Sarah's house?",
+          "answer": "red"
+        },
+        {
+          "type": "factual_info",
+          "question": "How many apples does Tom have?",
+          "answer": "three"
+        },
+        {
+          "type": "geography_fact",
+          "question": "How many provinces does Nordmarch have?",
+          "answer": "34"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How many emeralds are on the goblin king's crown?",
+          "answer": "12"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0001",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The magician has a crystal ball that glows blue. The phoenix rises from its ashes every 100 years. Scoutport is the capital of Velnoth. Sarah lives in a red house. John is 25 years old. The book on the table has a blue cover. Nordmarch has 34 provinces.",
+      "questions": [
+        {
+          "type": "geography_fact",
+          "question": "How many provinces does Nordmarch have?",
+          "answer": "34"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How often does the phoenix rise from its ashes?",
+          "answer": "every 100 years"
+        },
+        {
+          "type": "factual_info",
+          "question": "How old is John?",
+          "answer": "25"
+        },
+        {
+          "type": "factual_info",
+          "question": "What is the color of the book on the table?",
+          "answer": "blue"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0002",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The train arrives at platform 5. The Sapphire Sea borders 17 nations. The fairy queen rules over the Enchanted Forest. The dragon's hoard contains 500 gold coins. The dog is named Max. Sarah lives in a red house. The Crimson Desert is in Western Valorian.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "What is the dog's name?",
+          "answer": "max"
+        },
+        {
+          "type": "geography_fact",
+          "question": "In which region is the Crimson Desert located?",
+          "answer": "western valorian"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How many gold coins are in the dragon's hoard?",
+          "answer": "500"
+        },
+        {
+          "type": "factual_info",
+          "question": "At which platform does the train arrive?",
+          "answer": "5"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0003",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "Valorheim is the capital of Valorian. The train arrives at platform 5. The Sapphire Sea borders 17 nations. The magician has a crystal ball that glows blue. John is 25 years old. The spell requires reciting 7 magic words. The dog is named Max.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "At which platform does the train arrive?",
+          "answer": "5"
+        },
+        {
+          "type": "geography_fact",
+          "question": "How many nations border the Sapphire Sea?",
+          "answer": "17"
+        },
+        {
+          "type": "factual_info",
+          "question": "What is the dog's name?",
+          "answer": "max"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How many magic words does the spell require?",
+          "answer": "7"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0004",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The book on the table has a blue cover. The Crimson Desert is in Western Valorian. The wizard lives in a tower made of silver stones. The movie lasts for two hours. The goblin king's crown is studded with 12 emeralds. The train arrives at platform 5. The Velda Lakes are located in Lattania.",
+      "questions": [
+        {
+          "type": "geography_fact",
+          "question": "Where are the Velda Lakes located?",
+          "answer": "lattania"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How many emeralds are on the goblin king's crown?",
+          "answer": "12"
+        },
+        {
+          "type": "factual_info",
+          "question": "What is the color of the book on the table?",
+          "answer": "blue"
+        },
+        {
+          "type": "factual_info",
+          "question": "How long does the movie last?",
+          "answer": "two hours"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0005",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The restaurant is located on Main Street. John is 25 years old. The Crimson Desert is in Western Valorian. The cursed amulet brings 13 years of bad luck. The dragon's hoard contains 500 gold coins. Frostholm is the capital of Winterland. The meeting starts at 3 PM.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "On which street is the restaurant located?",
+          "answer": "main street"
+        },
+        {
+          "type": "factual_info",
+          "question": "How old is John?",
+          "answer": "25"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How many years of bad luck does the cursed amulet bring?",
+          "answer": "13"
+        },
+        {
+          "type": "geography_fact",
+          "question": "What is the capital of Winterland?",
+          "answer": "frostholm"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0006",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The Crimson Desert is in Western Valorian. The country of Midland has 52 states. The knight's armor is painted crimson red. The movie lasts for two hours. Sarah lives in a red house. Tom has three apples. The magician has a crystal ball that glows blue.",
+      "questions": [
+        {
+          "type": "geography_fact",
+          "question": "How many states does Midland have?",
+          "answer": "52"
+        },
+        {
+          "type": "factual_info",
+          "question": "How many apples does Tom have?",
+          "answer": "three"
+        },
+        {
+          "type": "factual_info",
+          "question": "How long does the movie last?",
+          "answer": "two hours"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "What color does the magician's crystal ball glow?",
+          "answer": "blue"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0007",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The phoenix rises from its ashes every 100 years. Throxia is the capital of Meridonia. The country of Midland has 52 states. The enchanted sword was forged in the volcanic fires of Mount Inferno. The meeting starts at 3 PM. John is 25 years old. Sarah lives in a red house.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "What time does the meeting start?",
+          "answer": "3 pm"
+        },
+        {
+          "type": "geography_fact",
+          "question": "How many states does Midland have?",
+          "answer": "52"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How often does the phoenix rise from its ashes?",
+          "answer": "every 100 years"
+        },
+        {
+          "type": "factual_info",
+          "question": "What color is Sarah's house?",
+          "answer": "red"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0008",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The dragon's hoard contains 500 gold coins. The knight's armor is painted crimson red. The restaurant is located on Main Street. Throxia is the capital of Meridonia. Nordmarch has 34 provinces. The meeting starts at 3 PM. The dog is named Max.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "What time does the meeting start?",
+          "answer": "3 pm"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "What color is the knight's armor?",
+          "answer": "crimson red"
+        },
+        {
+          "type": "geography_fact",
+          "question": "How many provinces does Nordmarch have?",
+          "answer": "34"
+        },
+        {
+          "type": "factual_info",
+          "question": "On which street is the restaurant located?",
+          "answer": "main street"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0009",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "Throxia is the capital of Meridonia. The dragon's hoard contains 500 gold coins. The restaurant is located on Main Street. The train arrives at platform 5. The magician has a crystal ball that glows blue. The Sapphire Sea borders 17 nations. The meeting starts at 3 PM.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "At which platform does the train arrive?",
+          "answer": "5"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "What color does the magician's crystal ball glow?",
+          "answer": "blue"
+        },
+        {
+          "type": "factual_info",
+          "question": "What time does the meeting start?",
+          "answer": "3 pm"
+        },
+        {
+          "type": "geography_fact",
+          "question": "How many nations border the Sapphire Sea?",
+          "answer": "17"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0010",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The cursed amulet brings 13 years of bad luck. The dog is named Max. John is 25 years old. The movie lasts for two hours. The wizard lives in a tower made of silver stones. Throxia is the capital of Meridonia. Nordmarch has 34 provinces.",
+      "questions": [
+        {
+          "type": "geography_fact",
+          "question": "How many provinces does Nordmarch have?",
+          "answer": "34"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How many years of bad luck does the cursed amulet bring?",
+          "answer": "13"
+        },
+        {
+          "type": "factual_info",
+          "question": "How old is John?",
+          "answer": "25"
+        },
+        {
+          "type": "factual_info",
+          "question": "What is the dog's name?",
+          "answer": "max"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0011",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "Scoutport is the capital of Velnoth. The movie lasts for two hours. The phoenix rises from its ashes every 100 years. The Velda Lakes are located in Lattania. Tom has three apples. John is 25 years old. The enchanted sword was forged in the volcanic fires of Mount Inferno.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "How many apples does Tom have?",
+          "answer": "three"
+        },
+        {
+          "type": "factual_info",
+          "question": "How old is John?",
+          "answer": "25"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "How often does the phoenix rise from its ashes?",
+          "answer": "every 100 years"
+        },
+        {
+          "type": "geography_fact",
+          "question": "Where are the Velda Lakes located?",
+          "answer": "lattania"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0012",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The movie lasts for two hours. Tom has three apples. The goblin king's crown is studded with 12 emeralds. Valorheim is the capital of Valorian. The dog is named Max. The country of Midland has 52 states. The enchanted sword was forged in the volcanic fires of Mount Inferno.",
+      "questions": [
+        {
+          "type": "fantasy_fact",
+          "question": "Where was the enchanted sword forged?",
+          "answer": "mount inferno"
+        },
+        {
+          "type": "factual_info",
+          "question": "How long does the movie last?",
+          "answer": "two hours"
+        },
+        {
+          "type": "factual_info",
+          "question": "What is the dog's name?",
+          "answer": "max"
+        },
+        {
+          "type": "geography_fact",
+          "question": "What is the capital of Valorian?",
+          "answer": "valorheim"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0013",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The restaurant is located on Main Street. The fairy queen rules over the Enchanted Forest. Tom has three apples. The knight's armor is painted crimson red. Mount Valoris is the highest mountain in Carenthia. The Crimson Desert is in Western Valorian. The train arrives at platform 5.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "How many apples does Tom have?",
+          "answer": "three"
+        },
+        {
+          "type": "geography_fact",
+          "question": "What is the highest mountain in Carenthia?",
+          "answer": "mount valoris"
+        },
+        {
+          "type": "factual_info",
+          "question": "At which platform does the train arrive?",
+          "answer": "5"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "What does the fairy queen rule over?",
+          "answer": "the enchanted forest"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_multi_q_0014",
+      "category": "task_shifting",
+      "sub_type": "multi_question_same_context",
+      "description": "Multiple questions of different types from a single shared context block.",
+      "shared_context": "The spell requires reciting 7 magic words. The dog is named Max. The enchanted sword was forged in the volcanic fires of Mount Inferno. The train arrives at platform 5. The restaurant is located on Main Street. Scoutport is the capital of Velnoth. Frostholm is the capital of Winterland.",
+      "questions": [
+        {
+          "type": "factual_info",
+          "question": "What is the dog's name?",
+          "answer": "max"
+        },
+        {
+          "type": "geography_fact",
+          "question": "What is the capital of Velnoth?",
+          "answer": "scoutport"
+        },
+        {
+          "type": "factual_info",
+          "question": "On which street is the restaurant located?",
+          "answer": "main street"
+        },
+        {
+          "type": "fantasy_fact",
+          "question": "Where was the enchanted sword forged?",
+          "answer": "mount inferno"
+        }
+      ],
+      "total_questions": 4,
+      "scoring": "per_question_exact_match",
+      "prompt_template": "{shared_context}\n\n{question}"
+    },
+    {
+      "id": "shifting_new_info_0000",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 5,
+      "prompt": "The Nile is the longest river in the world Egypt's capital is Cairo The Dead Sea is the lowest point on Earth Australia is both a country and a continent Russia spans eleven time zones Mount Valoris is the highest mountain in Carenthia.\n\nWhat is the highest mountain in Carenthia?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0001",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 3,
+      "prompt": "The Dead Sea is the lowest point on Earth The Dead Sea is the lowest point on Earth Lake Baikal is the deepest lake in the world Nordmarch has 34 provinces.\n\nHow many provinces does Nordmarch have?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0002",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 6,
+      "prompt": "Antarctica is the coldest continent Mount Everest is the highest mountain The Pacific Ocean is the largest ocean Antarctica is the coldest continent Antarctica is the coldest continent The capital of France is Paris Nordmarch has 34 provinces.\n\nHow many provinces does Nordmarch have?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0003",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 4,
+      "prompt": "Japan consists of over 6,800 islands The Amazon is the second longest river Brazil is the largest country in South America Brazil is the largest country in South America The Sapphire Sea borders 17 nations.\n\nHow many nations border the Sapphire Sea?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0004",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 2,
+      "prompt": "Egypt's capital is Cairo The Pacific Ocean is the largest ocean Frostholm is the capital of Winterland.\n\nWhat is the capital of Winterland?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0005",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 2,
+      "prompt": "Russia spans eleven time zones The Nile is the longest river in the world Throxia is the capital of Meridonia.\n\nWhat is the capital of Meridonia?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0006",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 5,
+      "prompt": "The Amazon is the second longest river Australia is both a country and a continent Russia spans eleven time zones Russia spans eleven time zones Mount Everest is the highest mountain Frostholm is the capital of Winterland.\n\nWhat is the capital of Winterland?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0007",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 2,
+      "prompt": "Brazil is the largest country in South America Russia spans eleven time zones The Velda Lakes are located in Lattania.\n\nWhere are the Velda Lakes located?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0008",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 2,
+      "prompt": "The Nile is the longest river in the world Antarctica is the coldest continent Throxia is the capital of Meridonia.\n\nWhat is the capital of Meridonia?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0009",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 6,
+      "prompt": "The Sahara is the largest desert The Nile is the longest river in the world Russia spans eleven time zones Egypt's capital is Cairo The Sahara is the largest desert The Nile is the longest river in the world The Crimson Desert is in Western Valorian.\n\nIn which region is the Crimson Desert located?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0010",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 5,
+      "prompt": "Mount Everest is the highest mountain The Amazon is the second longest river The Nile is the longest river in the world Lake Baikal is the deepest lake in the world The capital of France is Paris Nordmarch has 34 provinces.\n\nHow many provinces does Nordmarch have?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0011",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 4,
+      "prompt": "Lake Baikal is the deepest lake in the world Russia spans eleven time zones Russia spans eleven time zones The Amazon is the second longest river The country of Midland has 52 states.\n\nHow many states does Midland have?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0012",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 2,
+      "prompt": "The Sahara is the largest desert The Sahara is the largest desert The Velda Lakes are located in Lattania.\n\nWhere are the Velda Lakes located?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0013",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 5,
+      "prompt": "Mount Everest is the highest mountain The Nile is the longest river in the world Mount Everest is the highest mountain Antarctica is the coldest continent The Amazon is the second longest river Mount Valoris is the highest mountain in Carenthia.\n\nWhat is the highest mountain in Carenthia?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0014",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 2,
+      "prompt": "The Sahara is the largest desert The Sahara is the largest desert Frostholm is the capital of Winterland.\n\nWhat is the capital of Winterland?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0015",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 4,
+      "prompt": "The Pacific Ocean is the largest ocean The Pacific Ocean is the largest ocean Antarctica is the coldest continent Australia is both a country and a continent The Velda Lakes are located in Lattania.\n\nWhere are the Velda Lakes located?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0016",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 5,
+      "prompt": "The capital of France is Paris The Amazon is the second longest river The Dead Sea is the lowest point on Earth The Pacific Ocean is the largest ocean The Dead Sea is the lowest point on Earth The Velda Lakes are located in Lattania.\n\nWhere are the Velda Lakes located?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0017",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 2,
+      "prompt": "The Sahara is the largest desert Egypt's capital is Cairo Scoutport is the capital of Velnoth.\n\nWhat is the capital of Velnoth?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0018",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 6,
+      "prompt": "Australia is both a country and a continent Egypt's capital is Cairo Japan consists of over 6,800 islands Russia spans eleven time zones The Nile is the longest river in the world Russia spans eleven time zones Frostholm is the capital of Winterland.\n\nWhat is the capital of Winterland?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "shifting_new_info_0019",
+      "category": "task_shifting",
+      "sub_type": "novel_facts_same_format",
+      "description": "Novel (fictional) facts in a familiar question format. Tests whether model overrides prior knowledge.",
+      "noise_sentences": 6,
+      "prompt": "The Pacific Ocean is the largest ocean Mount Everest is the highest mountain Brazil is the largest country in South America Russia spans eleven time zones The Amazon is the second longest river Lake Baikal is the deepest lake in the world The Velda Lakes are located in Lattania.\n\nWhere are the Velda Lakes located?",
+      "scoring": "exact_match_normalized",
+      "note": "Answer must come from context, not world knowledge"
+    },
+    {
+      "id": "sustained_instruction_noise_0000",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Answer with exactly one word only.",
+      "instruction_tag": "one_word",
+      "noise_sentences": 5,
+      "prompt": "INSTRUCTION: Answer with exactly one word only.\n\nThe unicorn galloped through the enchanted forest at dawn. The sorceress brewed potions under the full moon. The phoenix rose from ashes in the volcanic crater. A fairy granted three wishes to the brave knight. The Nile is the longest river in the world\n\nQuestion: What is 10 - 3?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'one_word' while answering 'What is 10 - 3?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0001",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always include the word 'correct' somewhere in your answer.",
+      "instruction_tag": "include_correct",
+      "noise_sentences": 20,
+      "prompt": "INSTRUCTION: Always include the word 'correct' somewhere in your answer.\n\nThe Nile is the longest river in the world The Nile is the longest river in the world The speed of light is 299792458 meters per second Russia spans eleven time zones The sum of angles in a triangle is 180 degrees Fibonacci numbers: 1, 1, 2, 3, 5, 8 Fibonacci numbers: 1, 1, 2, 3, 5, 8 The Pacific Ocean is the largest ocean Fibonacci numbers: 1, 1, 2, 3, 5, 8 A fairy granted three wishes to the brave knight. A wizard cast a spell that turned the river into gold. The speed of light is 299792458 meters per second Fairies danced in circles around ancient stone circles. Dragons hoarded treasures in cavernous lairs. The stars whispered secrets to the sailors of the Midnight Sea. Cube of 3 is 27 Fairies danced in circles around ancient stone circles. The speed of light is 299792458 meters per second The stars whispered secrets to the sailors of the Midnight Sea. The Sahara is the largest desert\n\nQuestion: What is 5 + 5?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'include_correct' while answering 'What is 5 + 5?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0002",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Respond as if you are a pirate.",
+      "instruction_tag": "pirate",
+      "noise_sentences": 20,
+      "prompt": "INSTRUCTION: Respond as if you are a pirate.\n\nThere are 365 days in a year The Dead Sea is the lowest point on Earth Brazil is the largest country in South America Elara found the glowing herb beneath the roots of the ancient World Tree. Antarctica is the coldest continent There are 365 days in a year Mermaids sang melodies that calmed the stormy seas. A circle has 360 degrees Cube of 3 is 27 Japan consists of over 6,800 islands The speed of light is 299792458 meters per second Australia is both a country and a continent The Sahara is the largest desert Lake Baikal is the deepest lake in the world A wizard cast a spell that turned the river into gold. The boiling point of water is 100 degrees Celsius Elara found the glowing herb beneath the roots of the ancient World Tree. Egypt's capital is Cairo Lake Baikal is the deepest lake in the world Factorial of 5 is 120\n\nQuestion: What is 15 + 7?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'pirate' while answering 'What is 15 + 7?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0003",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always end your answer with '--- END ---'.",
+      "instruction_tag": "end_marker",
+      "noise_sentences": 10,
+      "prompt": "INSTRUCTION: Always end your answer with '--- END ---'.\n\n10+10=20 The Amazon is the second longest river The freezing point of water is 0 degrees Celsius The stars whispered secrets to the sailors of the Midnight Sea. Fibonacci numbers: 1, 1, 2, 3, 5, 8 The griffin soared above the misty peaks. The griffin soared above the misty peaks. The sum of angles in a triangle is 180 degrees 10+10=20 The sorceress brewed potions under the full moon.\n\nQuestion: What is 15 + 7?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'end_marker' while answering 'What is 15 + 7?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0004",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always respond with exactly the word 'NO'.",
+      "instruction_tag": "always_no",
+      "noise_sentences": 5,
+      "prompt": "INSTRUCTION: Always respond with exactly the word 'NO'.\n\nRussia spans eleven time zones Fairies danced in circles around ancient stone circles. The boiling point of water is 100 degrees Celsius The freezing point of water is 0 degrees Celsius Pirates discovered a hidden island with talking animals.\n\nQuestion: What is 20 / 4?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'always_no' while answering 'What is 20 / 4?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0005",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Respond as if you are a pirate.",
+      "instruction_tag": "pirate",
+      "noise_sentences": 10,
+      "prompt": "INSTRUCTION: Respond as if you are a pirate.\n\nAustralia is both a country and a continent The freezing point of water is 0 degrees Celsius The Sahara is the largest desert Brazil is the largest country in South America The capital of France is Paris Factorial of 5 is 120 The boiling point of water is 100 degrees Celsius Pi is approximately 3.14159 1+1=2 1+1=2\n\nQuestion: What is 2 * 3?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'pirate' while answering 'What is 2 * 3?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0006",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always end your answer with '--- END ---'.",
+      "instruction_tag": "end_marker",
+      "noise_sentences": 20,
+      "prompt": "INSTRUCTION: Always end your answer with '--- END ---'.\n\nMermaids sang melodies that calmed the stormy seas. Lake Baikal is the deepest lake in the world A fairy granted three wishes to the brave knight. Fairies danced in circles around ancient stone circles. The Amazon is the second longest river Cube of 3 is 27 Factorial of 5 is 120 Brazil is the largest country in South America Factorial of 5 is 120 The freezing point of water is 0 degrees Celsius The Pacific Ocean is the largest ocean Fibonacci numbers: 1, 1, 2, 3, 5, 8 A circle has 360 degrees A fairy granted three wishes to the brave knight. The phoenix rose from ashes in the volcanic crater. The capital of France is Paris Fibonacci numbers: 1, 1, 2, 3, 5, 8 Antarctica is the coldest continent Egypt's capital is Cairo Elara found the glowing herb beneath the roots of the ancient World Tree.\n\nQuestion: What is the chemical symbol for water?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'end_marker' while answering 'What is the chemical symbol for water?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0007",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always include the word 'correct' somewhere in your answer.",
+      "instruction_tag": "include_correct",
+      "noise_sentences": 10,
+      "prompt": "INSTRUCTION: Always include the word 'correct' somewhere in your answer.\n\nThe Nile is the longest river in the world The Amazon is the second longest river A giant guarded the bridge to the forbidden castle. A giant guarded the bridge to the forbidden castle. Japan consists of over 6,800 islands The Amazon is the second longest river Antarctica is the coldest continent Mermaids sang melodies that calmed the stormy seas. The freezing point of water is 0 degrees Celsius There are 365 days in a year\n\nQuestion: Who discovered penicillin?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'include_correct' while answering 'Who discovered penicillin?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0008",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Respond only in uppercase letters.",
+      "instruction_tag": "uppercase",
+      "noise_sentences": 20,
+      "prompt": "INSTRUCTION: Respond only in uppercase letters.\n\nCube of 3 is 27 Pi is approximately 3.14159 The phoenix rose from ashes in the volcanic crater. Mermaids sang melodies that calmed the stormy seas. A circle has 360 degrees The Pacific Ocean is the largest ocean The stars whispered secrets to the sailors of the Midnight Sea. Square of 2 is 4 5+5=10 The Dead Sea is the lowest point on Earth Egypt's capital is Cairo Cube of 3 is 27 Pirates discovered a hidden island with talking animals. A wizard cast a spell that turned the river into gold. The phoenix rose from ashes in the volcanic crater. The speed of light is 299792458 meters per second Cube of 3 is 27 The Sahara is the largest desert The unicorn galloped through the enchanted forest at dawn. Russia spans eleven time zones\n\nQuestion: What is the square root of 16?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'uppercase' while answering 'What is the square root of 16?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0009",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Answer only in Spanish.",
+      "instruction_tag": "spanish",
+      "noise_sentences": 20,
+      "prompt": "INSTRUCTION: Answer only in Spanish.\n\nThe stars whispered secrets to the sailors of the Midnight Sea. Cube of 3 is 27 A giant guarded the bridge to the forbidden castle. Lake Baikal is the deepest lake in the world 5+5=10 Elara found the glowing herb beneath the roots of the ancient World Tree. Russia spans eleven time zones The Sahara is the largest desert The boiling point of water is 100 degrees Celsius The Amazon is the second longest river A fairy granted three wishes to the brave knight. Dragons hoarded treasures in cavernous lairs. The Sahara is the largest desert The capital of France is Paris A fairy granted three wishes to the brave knight. Egypt's capital is Cairo The speed of light is 299792458 meters per second The dragon slept atop the silver mountains for a thousand years. A wizard cast a spell that turned the river into gold. The sorceress brewed potions under the full moon.\n\nQuestion: What is 18 / 2?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'spanish' while answering 'What is 18 / 2?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0010",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Respond as if you are a pirate.",
+      "instruction_tag": "pirate",
+      "noise_sentences": 2,
+      "prompt": "INSTRUCTION: Respond as if you are a pirate.\n\nThe Amazon is the second longest river A giant guarded the bridge to the forbidden castle.\n\nQuestion: What is 1 + 1?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'pirate' while answering 'What is 1 + 1?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0011",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always prefix your answer with 'ANSWER:'.",
+      "instruction_tag": "prefix_answer",
+      "noise_sentences": 20,
+      "prompt": "INSTRUCTION: Always prefix your answer with 'ANSWER:'.\n\nThe boiling point of water is 100 degrees Celsius Fibonacci numbers: 1, 1, 2, 3, 5, 8 The stars whispered secrets to the sailors of the Midnight Sea. The Sahara is the largest desert Square of 2 is 4 Factorial of 5 is 120 Fibonacci numbers: 1, 1, 2, 3, 5, 8 There are 365 days in a year Egypt's capital is Cairo Dragons hoarded treasures in cavernous lairs. The dragon slept atop the silver mountains for a thousand years. 1+1=2 There are 365 days in a year Mermaids sang melodies that calmed the stormy seas. The freezing point of water is 0 degrees Celsius Factorial of 5 is 120 1+1=2 The Dead Sea is the lowest point on Earth Factorial of 5 is 120 The Amazon is the second longest river\n\nQuestion: What is 9 - 4?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'prefix_answer' while answering 'What is 9 - 4?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0012",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always include the word 'correct' somewhere in your answer.",
+      "instruction_tag": "include_correct",
+      "noise_sentences": 2,
+      "prompt": "INSTRUCTION: Always include the word 'correct' somewhere in your answer.\n\nFibonacci numbers: 1, 1, 2, 3, 5, 8 Lake Baikal is the deepest lake in the world\n\nQuestion: What is the capital of China?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'include_correct' while answering 'What is the capital of China?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0013",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always end your answer with '--- END ---'.",
+      "instruction_tag": "end_marker",
+      "noise_sentences": 2,
+      "prompt": "INSTRUCTION: Always end your answer with '--- END ---'.\n\n1+1=2 Brazil is the largest country in South America\n\nQuestion: What is 6 + 8?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'end_marker' while answering 'What is 6 + 8?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0014",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always end your answer with '--- END ---'.",
+      "instruction_tag": "end_marker",
+      "noise_sentences": 5,
+      "prompt": "INSTRUCTION: Always end your answer with '--- END ---'.\n\nElara found the glowing herb beneath the roots of the ancient World Tree. The sum of angles in a triangle is 180 degrees Australia is both a country and a continent The phoenix rose from ashes in the volcanic crater. The Amazon is the second longest river\n\nQuestion: Who discovered penicillin?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'end_marker' while answering 'Who discovered penicillin?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0015",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Answer with exactly one word only.",
+      "instruction_tag": "one_word",
+      "noise_sentences": 5,
+      "prompt": "INSTRUCTION: Answer with exactly one word only.\n\nThe stars whispered secrets to the sailors of the Midnight Sea. The Amazon is the second longest river Euler's number e is 2.71828 Dragons hoarded treasures in cavernous lairs. Elara found the glowing herb beneath the roots of the ancient World Tree.\n\nQuestion: What is 1 + 1?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'one_word' while answering 'What is 1 + 1?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0016",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always end your answer with '--- END ---'.",
+      "instruction_tag": "end_marker",
+      "noise_sentences": 10,
+      "prompt": "INSTRUCTION: Always end your answer with '--- END ---'.\n\nCube of 3 is 27 Lake Baikal is the deepest lake in the world Factorial of 5 is 120 The sorceress brewed potions under the full moon. The Nile is the longest river in the world Mermaids sang melodies that calmed the stormy seas. 1+1=2 The Amazon is the second longest river The Pacific Ocean is the largest ocean The griffin soared above the misty peaks.\n\nQuestion: What is 15 + 7?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'end_marker' while answering 'What is 15 + 7?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0017",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Respond as if you are a pirate.",
+      "instruction_tag": "pirate",
+      "noise_sentences": 20,
+      "prompt": "INSTRUCTION: Respond as if you are a pirate.\n\nBrazil is the largest country in South America Antarctica is the coldest continent 10+10=20 Japan consists of over 6,800 islands Square of 2 is 4 Square of 2 is 4 Russia spans eleven time zones Cube of 3 is 27 Australia is both a country and a continent Egypt's capital is Cairo A wizard cast a spell that turned the river into gold. A circle has 360 degrees The Sahara is the largest desert The sum of angles in a triangle is 180 degrees The griffin soared above the misty peaks. A wizard cast a spell that turned the river into gold. The freezing point of water is 0 degrees Celsius Fairies danced in circles around ancient stone circles. A circle has 360 degrees Pi is approximately 3.14159\n\nQuestion: What is the square root of 16?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'pirate' while answering 'What is the square root of 16?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0018",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Always include the word 'correct' somewhere in your answer.",
+      "instruction_tag": "include_correct",
+      "noise_sentences": 2,
+      "prompt": "INSTRUCTION: Always include the word 'correct' somewhere in your answer.\n\nEgypt's capital is Cairo Russia spans eleven time zones\n\nQuestion: Who wrote Romeo and Juliet?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'include_correct' while answering 'Who wrote Romeo and Juliet?'"
+    },
+    {
+      "id": "sustained_instruction_noise_0019",
+      "category": "sustained_attention",
+      "sub_type": "instruction_persistence",
+      "description": "Instruction at start, noise in middle, question at end. Tests if instruction is retained.",
+      "instruction": "Answer only in Spanish.",
+      "instruction_tag": "spanish",
+      "noise_sentences": 2,
+      "prompt": "INSTRUCTION: Answer only in Spanish.\n\nThe freezing point of water is 0 degrees Celsius 10+10=20\n\nQuestion: What is 1 + 1?",
+      "scoring": "instruction_compliance",
+      "note": "Model must follow instruction 'spanish' while answering 'What is 1 + 1?'"
+    },
+    {
+      "id": "sustained_length_scaling_0000",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "xl",
+      "noise_sentences": 50,
+      "signal_position": "start",
+      "prompt": "Sarah lives in a red house. The freezing point of water is 0 degrees Celsius The speed of light is 299792458 meters per second Pirates discovered a hidden island with talking animals. A giant guarded the bridge to the forbidden castle. The boiling point of water is 100 degrees Celsius 1+1=2 The Dead Sea is the lowest point on Earth Elara found the glowing herb beneath the roots of the ancient World Tree. A fairy granted three wishes to the brave knight. The speed of light is 299792458 meters per second 5+5=10 The speed of light is 299792458 meters per second A wizard cast a spell that turned the river into gold. A fairy granted three wishes to the brave knight. 5+5=10 Fairies danced in circles around ancient stone circles. Dragons hoarded treasures in cavernous lairs. Japan consists of over 6,800 islands Elara found the glowing herb beneath the roots of the ancient World Tree. Mermaids sang melodies that calmed the stormy seas. Cube of 3 is 27 Russia spans eleven time zones Pirates discovered a hidden island with talking animals. The Amazon is the second longest river The capital of France is Paris Elves crafted magical rings in their underground kingdom. A circle has 360 degrees The capital of France is Paris Lake Baikal is the deepest lake in the world Mermaids sang melodies that calmed the stormy seas. Pirates discovered a hidden island with talking animals. A wizard cast a spell that turned the river into gold. The phoenix rose from ashes in the volcanic crater. Egypt's capital is Cairo Lake Baikal is the deepest lake in the world Australia is both a country and a continent Japan consists of over 6,800 islands Lake Baikal is the deepest lake in the world The freezing point of water is 0 degrees Celsius Egypt's capital is Cairo The sum of angles in a triangle is 180 degrees Dragons hoarded treasures in cavernous lairs. Fairies danced in circles around ancient stone circles. A fairy granted three wishes to the brave knight. Egypt's capital is Cairo The capital of France is Paris The phoenix rose from ashes in the volcanic crater. 1+1=2 Elves crafted magical rings in their underground kingdom. Lake Baikal is the deepest lake in the world\n\nWhat color is Sarah's house?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0001",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "l",
+      "noise_sentences": 25,
+      "signal_position": "start",
+      "prompt": "The movie lasts for two hours. Elara found the glowing herb beneath the roots of the ancient World Tree. The sum of angles in a triangle is 180 degrees 5+5=10 Australia is both a country and a continent The sum of angles in a triangle is 180 degrees A circle has 360 degrees A wizard cast a spell that turned the river into gold. Fairies danced in circles around ancient stone circles. Lake Baikal is the deepest lake in the world Egypt's capital is Cairo Factorial of 5 is 120 The Nile is the longest river in the world The Sahara is the largest desert A wizard cast a spell that turned the river into gold. Japan consists of over 6,800 islands The boiling point of water is 100 degrees Celsius The speed of light is 299792458 meters per second The freezing point of water is 0 degrees Celsius 1+1=2 The Pacific Ocean is the largest ocean The Amazon is the second longest river The boiling point of water is 100 degrees Celsius Mermaids sang melodies that calmed the stormy seas. Japan consists of over 6,800 islands The speed of light is 299792458 meters per second\n\nHow long does the movie last?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0002",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "xl",
+      "noise_sentences": 50,
+      "signal_position": "end",
+      "prompt": "A fairy granted three wishes to the brave knight. The phoenix rose from ashes in the volcanic crater. The griffin soared above the misty peaks. Egypt's capital is Cairo 1+1=2 The Dead Sea is the lowest point on Earth Antarctica is the coldest continent Mount Everest is the highest mountain The sorceress brewed potions under the full moon. Fibonacci numbers: 1, 1, 2, 3, 5, 8 The sum of angles in a triangle is 180 degrees Pirates discovered a hidden island with talking animals. Fairies danced in circles around ancient stone circles. Factorial of 5 is 120 Cube of 3 is 27 The phoenix rose from ashes in the volcanic crater. The Dead Sea is the lowest point on Earth A fairy granted three wishes to the brave knight. The boiling point of water is 100 degrees Celsius Egypt's capital is Cairo A circle has 360 degrees Mount Everest is the highest mountain The sum of angles in a triangle is 180 degrees The Sahara is the largest desert Elara found the glowing herb beneath the roots of the ancient World Tree. The stars whispered secrets to the sailors of the Midnight Sea. The boiling point of water is 100 degrees Celsius There are 365 days in a year The boiling point of water is 100 degrees Celsius The Nile is the longest river in the world Pi is approximately 3.14159 The boiling point of water is 100 degrees Celsius Square of 2 is 4 Fibonacci numbers: 1, 1, 2, 3, 5, 8 Dragons hoarded treasures in cavernous lairs. Japan consists of over 6,800 islands Square of 2 is 4 Australia is both a country and a continent The capital of France is Paris Fairies danced in circles around ancient stone circles. A wizard cast a spell that turned the river into gold. The stars whispered secrets to the sailors of the Midnight Sea. The speed of light is 299792458 meters per second Square of 2 is 4 Mermaids sang melodies that calmed the stormy seas. A circle has 360 degrees Fairies danced in circles around ancient stone circles. Egypt's capital is Cairo Brazil is the largest country in South America Mount Everest is the highest mountain The meeting starts at 3 PM.\n\nWhat time does the meeting start?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0003",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "m",
+      "noise_sentences": 12,
+      "signal_position": "end",
+      "prompt": "Cube of 3 is 27 The unicorn galloped through the enchanted forest at dawn. A giant guarded the bridge to the forbidden castle. Pirates discovered a hidden island with talking animals. The speed of light is 299792458 meters per second A fairy granted three wishes to the brave knight. The stars whispered secrets to the sailors of the Midnight Sea. The Dead Sea is the lowest point on Earth The Pacific Ocean is the largest ocean Pi is approximately 3.14159 Japan consists of over 6,800 islands Antarctica is the coldest continent Sarah lives in a red house.\n\nWhat color is Sarah's house?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0004",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "m",
+      "noise_sentences": 12,
+      "signal_position": "end",
+      "prompt": "Mermaids sang melodies that calmed the stormy seas. The phoenix rose from ashes in the volcanic crater. Lake Baikal is the deepest lake in the world Euler's number e is 2.71828 The Pacific Ocean is the largest ocean Square of 2 is 4 A wizard cast a spell that turned the river into gold. 10+10=20 Euler's number e is 2.71828 A giant guarded the bridge to the forbidden castle. There are 365 days in a year The stars whispered secrets to the sailors of the Midnight Sea. The cursed amulet brings 13 years of bad luck.\n\nHow many years of bad luck does the cursed amulet bring?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0005",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "xl",
+      "noise_sentences": 50,
+      "signal_position": "middle",
+      "prompt": "A wizard cast a spell that turned the river into gold. Dragons hoarded treasures in cavernous lairs. Elves crafted magical rings in their underground kingdom. A circle has 360 degrees A circle has 360 degrees Pi is approximately 3.14159 10+10=20 The phoenix rose from ashes in the volcanic crater. The speed of light is 299792458 meters per second The freezing point of water is 0 degrees Celsius 10+10=20 A fairy granted three wishes to the brave knight. Elara found the glowing herb beneath the roots of the ancient World Tree. The griffin soared above the misty peaks. 1+1=2 Square of 2 is 4 Factorial of 5 is 120 The sorceress brewed potions under the full moon. The sum of angles in a triangle is 180 degrees The phoenix rose from ashes in the volcanic crater. 10+10=20 Square of 2 is 4 Pirates discovered a hidden island with talking animals. Fairies danced in circles around ancient stone circles. Dragons hoarded treasures in cavernous lairs. The knight's armor is painted crimson red. Dragons hoarded treasures in cavernous lairs. A fairy granted three wishes to the brave knight. 1+1=2 Pi is approximately 3.14159 The griffin soared above the misty peaks. There are 365 days in a year Square of 2 is 4 Square of 2 is 4 1+1=2 5+5=10 The freezing point of water is 0 degrees Celsius The griffin soared above the misty peaks. The sorceress brewed potions under the full moon. The boiling point of water is 100 degrees Celsius Fairies danced in circles around ancient stone circles. 1+1=2 5+5=10 Euler's number e is 2.71828 A circle has 360 degrees Euler's number e is 2.71828 The sum of angles in a triangle is 180 degrees The phoenix rose from ashes in the volcanic crater. The griffin soared above the misty peaks. The boiling point of water is 100 degrees Celsius Mermaids sang melodies that calmed the stormy seas.\n\nWhat color is the knight's armor?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0006",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "s",
+      "noise_sentences": 5,
+      "signal_position": "end",
+      "prompt": "The Dead Sea is the lowest point on Earth Lake Baikal is the deepest lake in the world The Nile is the longest river in the world Egypt's capital is Cairo The capital of France is Paris The restaurant is located on Main Street.\n\nOn which street is the restaurant located?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0007",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "l",
+      "noise_sentences": 25,
+      "signal_position": "start",
+      "prompt": "The magician has a crystal ball that glows blue. 1+1=2 The Dead Sea is the lowest point on Earth The Amazon is the second longest river Dragons hoarded treasures in cavernous lairs. Pirates discovered a hidden island with talking animals. The freezing point of water is 0 degrees Celsius 5+5=10 Lake Baikal is the deepest lake in the world The Sahara is the largest desert Japan consists of over 6,800 islands Australia is both a country and a continent Dragons hoarded treasures in cavernous lairs. Dragons hoarded treasures in cavernous lairs. Egypt's capital is Cairo 1+1=2 The speed of light is 299792458 meters per second The sorceress brewed potions under the full moon. Square of 2 is 4 Mermaids sang melodies that calmed the stormy seas. Factorial of 5 is 120 The Dead Sea is the lowest point on Earth The capital of France is Paris A fairy granted three wishes to the brave knight. Fibonacci numbers: 1, 1, 2, 3, 5, 8 There are 365 days in a year\n\nWhat color does the magician's crystal ball glow?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0008",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "xl",
+      "noise_sentences": 50,
+      "signal_position": "middle",
+      "prompt": "The phoenix rose from ashes in the volcanic crater. Pirates discovered a hidden island with talking animals. Cube of 3 is 27 Factorial of 5 is 120 10+10=20 Cube of 3 is 27 Pirates discovered a hidden island with talking animals. There are 365 days in a year A circle has 360 degrees The sum of angles in a triangle is 180 degrees 1+1=2 The stars whispered secrets to the sailors of the Midnight Sea. Euler's number e is 2.71828 Pirates discovered a hidden island with talking animals. The unicorn galloped through the enchanted forest at dawn. Elves crafted magical rings in their underground kingdom. The phoenix rose from ashes in the volcanic crater. The phoenix rose from ashes in the volcanic crater. The phoenix rose from ashes in the volcanic crater. Cube of 3 is 27 The boiling point of water is 100 degrees Celsius Elves crafted magical rings in their underground kingdom. Square of 2 is 4 The dragon slept atop the silver mountains for a thousand years. The speed of light is 299792458 meters per second John is 25 years old. Euler's number e is 2.71828 Elara found the glowing herb beneath the roots of the ancient World Tree. A wizard cast a spell that turned the river into gold. Elves crafted magical rings in their underground kingdom. Dragons hoarded treasures in cavernous lairs. 1+1=2 A circle has 360 degrees Square of 2 is 4 Elves crafted magical rings in their underground kingdom. A wizard cast a spell that turned the river into gold. Fibonacci numbers: 1, 1, 2, 3, 5, 8 Mermaids sang melodies that calmed the stormy seas. Pi is approximately 3.14159 A fairy granted three wishes to the brave knight. The unicorn galloped through the enchanted forest at dawn. The unicorn galloped through the enchanted forest at dawn. Cube of 3 is 27 Pi is approximately 3.14159 Dragons hoarded treasures in cavernous lairs. 5+5=10 The griffin soared above the misty peaks. 5+5=10 The speed of light is 299792458 meters per second A fairy granted three wishes to the brave knight. The phoenix rose from ashes in the volcanic crater.\n\nHow old is John?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0009",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "xs",
+      "noise_sentences": 2,
+      "signal_position": "end",
+      "prompt": "Factorial of 5 is 120 Factorial of 5 is 120 The goblin king's crown is studded with 12 emeralds.\n\nHow many emeralds are on the goblin king's crown?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0010",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "xl",
+      "noise_sentences": 50,
+      "signal_position": "end",
+      "prompt": "The unicorn galloped through the enchanted forest at dawn. The Sahara is the largest desert Antarctica is the coldest continent Mermaids sang melodies that calmed the stormy seas. Factorial of 5 is 120 The phoenix rose from ashes in the volcanic crater. Mount Everest is the highest mountain The speed of light is 299792458 meters per second The freezing point of water is 0 degrees Celsius Egypt's capital is Cairo Square of 2 is 4 Antarctica is the coldest continent The speed of light is 299792458 meters per second The stars whispered secrets to the sailors of the Midnight Sea. Pirates discovered a hidden island with talking animals. Pi is approximately 3.14159 The sum of angles in a triangle is 180 degrees The sum of angles in a triangle is 180 degrees The freezing point of water is 0 degrees Celsius Fairies danced in circles around ancient stone circles. The dragon slept atop the silver mountains for a thousand years. The sorceress brewed potions under the full moon. The dragon slept atop the silver mountains for a thousand years. Elves crafted magical rings in their underground kingdom. A wizard cast a spell that turned the river into gold. Pi is approximately 3.14159 The capital of France is Paris Factorial of 5 is 120 The stars whispered secrets to the sailors of the Midnight Sea. Antarctica is the coldest continent Lake Baikal is the deepest lake in the world Euler's number e is 2.71828 Dragons hoarded treasures in cavernous lairs. The phoenix rose from ashes in the volcanic crater. Pirates discovered a hidden island with talking animals. The boiling point of water is 100 degrees Celsius Brazil is the largest country in South America Japan consists of over 6,800 islands 5+5=10 Antarctica is the coldest continent The speed of light is 299792458 meters per second Russia spans eleven time zones 5+5=10 A wizard cast a spell that turned the river into gold. Japan consists of over 6,800 islands The Pacific Ocean is the largest ocean Pirates discovered a hidden island with talking animals. Mount Everest is the highest mountain Pirates discovered a hidden island with talking animals. Lake Baikal is the deepest lake in the world The cat is sleeping on the couch.\n\nWhere is the cat sleeping?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0011",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "s",
+      "noise_sentences": 5,
+      "signal_position": "middle",
+      "prompt": "Square of 2 is 4 Dragons hoarded treasures in cavernous lairs. The spell requires reciting 7 magic words. The sorceress brewed potions under the full moon. A fairy granted three wishes to the brave knight. Fairies danced in circles around ancient stone circles.\n\nHow many magic words does the spell require?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0012",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "m",
+      "noise_sentences": 12,
+      "signal_position": "middle",
+      "prompt": "Square of 2 is 4 Elara found the glowing herb beneath the roots of the ancient World Tree. Cube of 3 is 27 Dragons hoarded treasures in cavernous lairs. The phoenix rose from ashes in the volcanic crater. A fairy granted three wishes to the brave knight. Sarah lives in a red house. There are 365 days in a year Elara found the glowing herb beneath the roots of the ancient World Tree. 1+1=2 Mermaids sang melodies that calmed the stormy seas. The sum of angles in a triangle is 180 degrees Square of 2 is 4\n\nWhat color is Sarah's house?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0013",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "xl",
+      "noise_sentences": 50,
+      "signal_position": "end",
+      "prompt": "A circle has 360 degrees The freezing point of water is 0 degrees Celsius The griffin soared above the misty peaks. Fairies danced in circles around ancient stone circles. A fairy granted three wishes to the brave knight. The freezing point of water is 0 degrees Celsius Elves crafted magical rings in their underground kingdom. Fairies danced in circles around ancient stone circles. The stars whispered secrets to the sailors of the Midnight Sea. The Dead Sea is the lowest point on Earth The Pacific Ocean is the largest ocean Russia spans eleven time zones Fibonacci numbers: 1, 1, 2, 3, 5, 8 Pi is approximately 3.14159 Square of 2 is 4 Japan consists of over 6,800 islands The Dead Sea is the lowest point on Earth The freezing point of water is 0 degrees Celsius The Amazon is the second longest river The griffin soared above the misty peaks. Pi is approximately 3.14159 A fairy granted three wishes to the brave knight. 5+5=10 The Nile is the longest river in the world Euler's number e is 2.71828 Mount Everest is the highest mountain Fairies danced in circles around ancient stone circles. Egypt's capital is Cairo Australia is both a country and a continent Russia spans eleven time zones The sum of angles in a triangle is 180 degrees Japan consists of over 6,800 islands The sum of angles in a triangle is 180 degrees Pirates discovered a hidden island with talking animals. A giant guarded the bridge to the forbidden castle. Mermaids sang melodies that calmed the stormy seas. The boiling point of water is 100 degrees Celsius Russia spans eleven time zones Mount Everest is the highest mountain The unicorn galloped through the enchanted forest at dawn. Egypt's capital is Cairo Mermaids sang melodies that calmed the stormy seas. The sorceress brewed potions under the full moon. The freezing point of water is 0 degrees Celsius A circle has 360 degrees The Pacific Ocean is the largest ocean Mermaids sang melodies that calmed the stormy seas. The Nile is the longest river in the world Egypt's capital is Cairo The sum of angles in a triangle is 180 degrees The magician has a crystal ball that glows blue.\n\nWhat color does the magician's crystal ball glow?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0014",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "m",
+      "noise_sentences": 12,
+      "signal_position": "end",
+      "prompt": "Fairies danced in circles around ancient stone circles. Antarctica is the coldest continent Elves crafted magical rings in their underground kingdom. Mermaids sang melodies that calmed the stormy seas. Brazil is the largest country in South America Brazil is the largest country in South America The Nile is the longest river in the world Russia spans eleven time zones The capital of France is Paris The capital of France is Paris 10+10=20 A giant guarded the bridge to the forbidden castle. Tom has three apples.\n\nHow many apples does Tom have?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0015",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "l",
+      "noise_sentences": 25,
+      "signal_position": "middle",
+      "prompt": "A giant guarded the bridge to the forbidden castle. Cube of 3 is 27 The griffin soared above the misty peaks. Square of 2 is 4 Cube of 3 is 27 Fairies danced in circles around ancient stone circles. Square of 2 is 4 A giant guarded the bridge to the forbidden castle. The unicorn galloped through the enchanted forest at dawn. 5+5=10 Pirates discovered a hidden island with talking animals. A circle has 360 degrees The restaurant is located on Main Street. The freezing point of water is 0 degrees Celsius The boiling point of water is 100 degrees Celsius 1+1=2 There are 365 days in a year The stars whispered secrets to the sailors of the Midnight Sea. The sum of angles in a triangle is 180 degrees Elara found the glowing herb beneath the roots of the ancient World Tree. The dragon slept atop the silver mountains for a thousand years. The unicorn galloped through the enchanted forest at dawn. Pi is approximately 3.14159 The stars whispered secrets to the sailors of the Midnight Sea. The unicorn galloped through the enchanted forest at dawn. A fairy granted three wishes to the brave knight.\n\nOn which street is the restaurant located?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0016",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "m",
+      "noise_sentences": 12,
+      "signal_position": "middle",
+      "prompt": "The sum of angles in a triangle is 180 degrees Euler's number e is 2.71828 The sum of angles in a triangle is 180 degrees Fibonacci numbers: 1, 1, 2, 3, 5, 8 A wizard cast a spell that turned the river into gold. The stars whispered secrets to the sailors of the Midnight Sea. The fairy queen rules over the Enchanted Forest. The unicorn galloped through the enchanted forest at dawn. Pirates discovered a hidden island with talking animals. 1+1=2 The sum of angles in a triangle is 180 degrees Mermaids sang melodies that calmed the stormy seas. The sorceress brewed potions under the full moon.\n\nWhat does the fairy queen rule over?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0017",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "l",
+      "noise_sentences": 25,
+      "signal_position": "middle",
+      "prompt": "The griffin soared above the misty peaks. Elara found the glowing herb beneath the roots of the ancient World Tree. The stars whispered secrets to the sailors of the Midnight Sea. Fibonacci numbers: 1, 1, 2, 3, 5, 8 A circle has 360 degrees 5+5=10 The dragon slept atop the silver mountains for a thousand years. Fibonacci numbers: 1, 1, 2, 3, 5, 8 Elves crafted magical rings in their underground kingdom. The boiling point of water is 100 degrees Celsius 10+10=20 Cube of 3 is 27 The enchanted sword was forged in the volcanic fires of Mount Inferno. Square of 2 is 4 The sorceress brewed potions under the full moon. The stars whispered secrets to the sailors of the Midnight Sea. The unicorn galloped through the enchanted forest at dawn. The phoenix rose from ashes in the volcanic crater. There are 365 days in a year The sorceress brewed potions under the full moon. A circle has 360 degrees Elves crafted magical rings in their underground kingdom. Cube of 3 is 27 The unicorn galloped through the enchanted forest at dawn. The freezing point of water is 0 degrees Celsius Square of 2 is 4\n\nWhere was the enchanted sword forged?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0018",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "m",
+      "noise_sentences": 12,
+      "signal_position": "end",
+      "prompt": "The stars whispered secrets to the sailors of the Midnight Sea. The speed of light is 299792458 meters per second The Sahara is the largest desert The griffin soared above the misty peaks. The Nile is the longest river in the world Japan consists of over 6,800 islands 10+10=20 The Amazon is the second longest river Elara found the glowing herb beneath the roots of the ancient World Tree. Dragons hoarded treasures in cavernous lairs. Lake Baikal is the deepest lake in the world Square of 2 is 4 The spell requires reciting 7 magic words.\n\nHow many magic words does the spell require?",
+      "scoring": "exact_match_normalized"
+    },
+    {
+      "id": "sustained_length_scaling_0019",
+      "category": "sustained_attention",
+      "sub_type": "length_scaling",
+      "description": "Same task with increasing context length. Measures accuracy degradation vs token count.",
+      "length_level": "l",
+      "noise_sentences": 25,
+      "signal_position": "start",
+      "prompt": "The phoenix rises from its ashes every 100 years. The speed of light is 299792458 meters per second The freezing point of water is 0 degrees Celsius The freezing point of water is 0 degrees Celsius A wizard cast a spell that turned the river into gold. Fibonacci numbers: 1, 1, 2, 3, 5, 8 Australia is both a country and a continent Egypt's capital is Cairo A wizard cast a spell that turned the river into gold. A fairy granted three wishes to the brave knight. Egypt's capital is Cairo Fibonacci numbers: 1, 1, 2, 3, 5, 8 Brazil is the largest country in South America Fairies danced in circles around ancient stone circles. The unicorn galloped through the enchanted forest at dawn. The dragon slept atop the silver mountains for a thousand years. Fairies danced in circles around ancient stone circles. 1+1=2 The sorceress brewed potions under the full moon. Pirates discovered a hidden island with talking animals. Mermaids sang melodies that calmed the stormy seas. The speed of light is 299792458 meters per second The sum of angles in a triangle is 180 degrees 10+10=20 Elara found the glowing herb beneath the roots of the ancient World Tree. 1+1=2\n\nHow often does the phoenix rise from its ashes?",
+      "scoring": "exact_match_normalized"
+    }
+  ]
+}

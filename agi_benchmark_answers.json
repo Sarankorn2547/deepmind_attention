@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "selective_noise_sim_0000",
+    "answer": "25",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0001",
+    "answer": "25",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0002",
+    "answer": "6",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0003",
+    "answer": "5",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0004",
+    "answer": "6",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0005",
+    "answer": "6",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0006",
+    "answer": "10",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0007",
+    "answer": "25",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0008",
+    "answer": "max",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0009",
+    "answer": "22",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0010",
+    "answer": "two hours",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0011",
+    "answer": "main street",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0012",
+    "answer": "10",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0013",
+    "answer": "two hours",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0014",
+    "answer": "red",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0015",
+    "answer": "nile",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0016",
+    "answer": "3 pm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0017",
+    "answer": "14",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0018",
+    "answer": "6",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_noise_sim_0019",
+    "answer": "on the couch",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0000",
+    "answer": "three",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0001",
+    "answer": "on the couch",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0002",
+    "answer": "crimson red",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0003",
+    "answer": "the enchanted forest",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0004",
+    "answer": "25",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0005",
+    "answer": "13",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0006",
+    "answer": "max",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0007",
+    "answer": "7",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0008",
+    "answer": "3 pm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0009",
+    "answer": "blue",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0010",
+    "answer": "on the couch",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0011",
+    "answer": "mount inferno",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0012",
+    "answer": "red",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0013",
+    "answer": "blue",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0014",
+    "answer": "7",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0015",
+    "answer": "three",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0016",
+    "answer": "main street",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0017",
+    "answer": "blue",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0018",
+    "answer": "7",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "selective_signal_ratio_0019",
+    "answer": "max",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0000",
+    "answer": "attic",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0001",
+    "answer": "attic",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0002",
+    "answer": "behind the house",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0003",
+    "answer": "mountain",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0004",
+    "answer": "building",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0005",
+    "answer": "building",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0006",
+    "answer": "under the table",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0007",
+    "answer": "mountain",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0008",
+    "answer": "maple avenue",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0009",
+    "answer": "downtown",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0010",
+    "answer": "under the table",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0011",
+    "answer": "attic",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0012",
+    "answer": "library",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0013",
+    "answer": "under the table",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0014",
+    "answer": "john",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0015",
+    "answer": "maple avenue",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0016",
+    "answer": "downtown",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0017",
+    "answer": "library",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0018",
+    "answer": "mountain",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "relational_linking_0019",
+    "answer": "library",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "complexity_apple_tracking_0000",
+    "answer": "-4",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0001",
+    "answer": "19",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0002",
+    "answer": "22",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0003",
+    "answer": "25",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0004",
+    "answer": "-4",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0005",
+    "answer": "36",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0006",
+    "answer": "4",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0007",
+    "answer": "2",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0008",
+    "answer": "11",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0009",
+    "answer": "26",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0010",
+    "answer": "3",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0011",
+    "answer": "23",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0012",
+    "answer": "12",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0013",
+    "answer": "29",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0014",
+    "answer": "27",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0015",
+    "answer": "-9",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0016",
+    "answer": "0",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0017",
+    "answer": "0",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0018",
+    "answer": "13",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "complexity_apple_tracking_0019",
+    "answer": "14",
+    "scoring": "exact_match_numeric"
+  },
+  {
+    "id": "shifting_multi_q_0000_q0",
+    "answer": "red",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0000_q1",
+    "answer": "three",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0000_q2",
+    "answer": "34",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0000_q3",
+    "answer": "12",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0001_q0",
+    "answer": "34",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0001_q1",
+    "answer": "every 100 years",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0001_q2",
+    "answer": "25",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0001_q3",
+    "answer": "blue",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0002_q0",
+    "answer": "max",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0002_q1",
+    "answer": "western valorian",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0002_q2",
+    "answer": "500",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0002_q3",
+    "answer": "5",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0003_q0",
+    "answer": "5",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0003_q1",
+    "answer": "17",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0003_q2",
+    "answer": "max",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0003_q3",
+    "answer": "7",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0004_q0",
+    "answer": "lattania",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0004_q1",
+    "answer": "12",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0004_q2",
+    "answer": "blue",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0004_q3",
+    "answer": "two hours",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0005_q0",
+    "answer": "main street",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0005_q1",
+    "answer": "25",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0005_q2",
+    "answer": "13",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0005_q3",
+    "answer": "frostholm",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0006_q0",
+    "answer": "52",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0006_q1",
+    "answer": "three",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0006_q2",
+    "answer": "two hours",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0006_q3",
+    "answer": "blue",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q0",
+    "answer": "3 pm",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q1",
+    "answer": "52",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q2",
+    "answer": "every 100 years",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0007_q3",
+    "answer": "red",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q0",
+    "answer": "3 pm",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q1",
+    "answer": "crimson red",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q2",
+    "answer": "34",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0008_q3",
+    "answer": "main street",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0009_q0",
+    "answer": "5",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0009_q1",
+    "answer": "blue",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0009_q2",
+    "answer": "3 pm",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0009_q3",
+    "answer": "17",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0010_q0",
+    "answer": "34",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0010_q1",
+    "answer": "13",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0010_q2",
+    "answer": "25",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0010_q3",
+    "answer": "max",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0011_q0",
+    "answer": "three",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0011_q1",
+    "answer": "25",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0011_q2",
+    "answer": "every 100 years",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0011_q3",
+    "answer": "lattania",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0012_q0",
+    "answer": "mount inferno",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0012_q1",
+    "answer": "two hours",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0012_q2",
+    "answer": "max",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0012_q3",
+    "answer": "valorheim",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0013_q0",
+    "answer": "three",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0013_q1",
+    "answer": "mount valoris",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0013_q2",
+    "answer": "5",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0013_q3",
+    "answer": "the enchanted forest",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0014_q0",
+    "answer": "max",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0014_q1",
+    "answer": "scoutport",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0014_q2",
+    "answer": "main street",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_multi_q_0014_q3",
+    "answer": "mount inferno",
+    "scoring": "per_question_exact_match"
+  },
+  {
+    "id": "shifting_new_info_0000",
+    "answer": "mount valoris",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0001",
+    "answer": "34",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0002",
+    "answer": "34",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0003",
+    "answer": "17",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0004",
+    "answer": "frostholm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0005",
+    "answer": "throxia",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0006",
+    "answer": "frostholm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0007",
+    "answer": "lattania",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0008",
+    "answer": "throxia",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0009",
+    "answer": "western valorian",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0010",
+    "answer": "34",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0011",
+    "answer": "52",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0012",
+    "answer": "lattania",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0013",
+    "answer": "mount valoris",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0014",
+    "answer": "frostholm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0015",
+    "answer": "lattania",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0016",
+    "answer": "lattania",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0017",
+    "answer": "scoutport",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0018",
+    "answer": "frostholm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "shifting_new_info_0019",
+    "answer": "lattania",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_instruction_noise_0000",
+    "answer": "7",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0001",
+    "answer": "10",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0002",
+    "answer": "22",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0003",
+    "answer": "22",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0004",
+    "answer": "5",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0005",
+    "answer": "6",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0006",
+    "answer": "h2o",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0007",
+    "answer": "alexander fleming",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0008",
+    "answer": "4",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0009",
+    "answer": "9",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0010",
+    "answer": "2",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0011",
+    "answer": "5",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0012",
+    "answer": "beijing",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0013",
+    "answer": "14",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0014",
+    "answer": "alexander fleming",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0015",
+    "answer": "2",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0016",
+    "answer": "22",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0017",
+    "answer": "4",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0018",
+    "answer": "william shakespeare",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_instruction_noise_0019",
+    "answer": "2",
+    "scoring": "instruction_compliance"
+  },
+  {
+    "id": "sustained_length_scaling_0000",
+    "answer": "red",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0001",
+    "answer": "two hours",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0002",
+    "answer": "3 pm",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0003",
+    "answer": "red",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0004",
+    "answer": "13",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0005",
+    "answer": "crimson red",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0006",
+    "answer": "main street",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0007",
+    "answer": "blue",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0008",
+    "answer": "25",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0009",
+    "answer": "12",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0010",
+    "answer": "on the couch",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0011",
+    "answer": "7",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0012",
+    "answer": "red",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0013",
+    "answer": "blue",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0014",
+    "answer": "three",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0015",
+    "answer": "main street",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0016",
+    "answer": "the enchanted forest",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0017",
+    "answer": "mount inferno",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0018",
+    "answer": "7",
+    "scoring": "exact_match_normalized"
+  },
+  {
+    "id": "sustained_length_scaling_0019",
+    "answer": "every 100 years",
+    "scoring": "exact_match_normalized"
+  }
+]
